@@ -15,3 +15,7 @@
     %lf   -> double
     %c    -> char
     %s    -> char[]
+
+Exemplo de uso:
+
+    printf("%s\n", x) // Imprime a variável inteira x (\n finaliza a linha)
