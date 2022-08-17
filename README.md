@@ -4,9 +4,51 @@
 # Lembretes
 ## Syntax
 
-    printf(); -> Requer <stdio.h>
+    printf();
 
-## Placeholders
+
+### - Operadores
+
+    + -> Adição
+    - -> Subtração
+    * -> Multiplicação
+    / -> Divisão
+    % -> Resto da divisão ("mod")
+
+    >  -> Maior
+    <  -> Menor
+    >= -> Maior ou igual
+    <= -> Menor ou igual
+    == -> Igual
+    != -> Diferente
+
+    && -> e
+    || -> ou
+    !  -> não
+
+### - Declaração de variáveis
+
+    tipo nome;
+
+Tipos de variáveis:
+
+    int
+    long int
+    long long int
+    float
+    double
+    char
+    char[]
+
+### - Atribuição de valor
+
+    int a = 5;
+    double b = 2.5;
+    char c = 'V'
+    char[6] = "Carlos"
+
+
+### - Placeholders
 
     %d/%i -> int
     %li   -> long int
