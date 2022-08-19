@@ -4,8 +4,7 @@
 # Lembretes
 ## Syntax
 
-    printf(); -> precisa da biblioteca stdio.h
-
+    printf(""); -> precisa da biblioteca stdio.h
 
 ### - Operadores
 
@@ -60,4 +59,4 @@ Tipos de variáveis:
 
 Exemplo de uso:
 
-    printf("%s\n", x) // Imprime a variável inteira x (\n finaliza a linha)
+    printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
