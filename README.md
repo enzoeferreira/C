@@ -4,7 +4,11 @@
 # Lembretes
 ## Syntax
 
-    printf(""); -> precisa da biblioteca stdio.h
+    printf(""); -> print
+    // Precisa da biblioteca stdio.h
+
+    scanf(); -> leitura de dados de tipos basicos (int, long int, float, char)
+    // Precisa da biblioteca stdio.h
 
 ### - Operadores
 
