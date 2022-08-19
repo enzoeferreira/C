@@ -4,7 +4,7 @@
 # Lembretes
 ## Syntax
 
-    printf();
+    printf(); -> precisa da biblioteca stdio.h
 
 
 ### - Operadores
