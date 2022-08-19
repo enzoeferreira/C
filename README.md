@@ -46,6 +46,13 @@ Tipos de variáveis:
     char c = 'V';
     strcpy(nome, "Carlos");
 
+Casting
+
+    int x;
+    double y;
+
+    y = (tipo) x;
+
 
 ### - Placeholders
 
