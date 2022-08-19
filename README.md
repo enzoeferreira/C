@@ -37,7 +37,7 @@ Tipos de variáveis:
     float
     double
     char
-    char[]
+    char nome[n]
 
 ### - Atribuição de valor
 
