@@ -81,3 +81,14 @@ Exemplo de uso:
 
     printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
     printf("%.2lf", y) // Imprime a variável double y (2 casas decimais)
+
+## Funções importantes
+### - Limpar entrada (ao usar fgets)
+
+    void limpar_entrada()
+    {
+        char c;
+        while ((c = getchar()) != '\n' && c != EOF) {}
+    }
+
+
