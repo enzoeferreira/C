@@ -14,7 +14,7 @@
     printf(""); -> print
     // Precisa da biblioteca stdio.h
 
-    scanf("%placeholder", &var); -> leitura de dados de tipos basicos (int, double etc)
+    scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s não usar &
     // Precisa da biblioteca stdio.h
 
 ### - Operadores
