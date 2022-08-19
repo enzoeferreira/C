@@ -4,7 +4,7 @@
 # Lembretes
 ## Esqueleto Padrão
 
-```c
+```cpp
 int main()
 {
     return 0;
@@ -13,7 +13,7 @@ int main()
 
 ## Syntax
 
-```c
+```cpp
 printf(""); -> print
 // Precisa da biblioteca stdio.h
 
@@ -46,7 +46,7 @@ scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s nã
 
 Tipos de variáveis:
 
-```c
+```cpp
 int
 long int
 long long int
@@ -58,7 +58,7 @@ char nome[n]
 
 ### - Atribuição de valor
 
-```c
+```cpp
 int a = 5;
 double b = 2.5;
 char c = 'V';
@@ -67,7 +67,7 @@ strcpy(nome, "Carlos");
 
 Casting
 
-```c
+```cpp
 int x;
 double y;
 
@@ -89,20 +89,31 @@ y = (tipo) x;
 
 Exemplo de uso:
 
-```c
+```cpp
 printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
 printf("%.2lf", y) // Imprime a variável double y (2 casas decimais)
 ```
 
 ## Funções importantes
-### - Limpar entrada (ao usar fgets)
+### - Limpar entrada (p/ usar fgets)
 
-```c
+```cpp
+/*
+ * Usar para limpar entrada antes do fgets
+ */
+
 void limpar_entrada()
 {
     char c;
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 ```
+### - Ler texto (fgets + tira o ENTER)
 
-
+```cpp
+void ler_texto(char var, int lenght)
+{
+    fgets(var, lenght, stdin);
+    strtok(var, "\n");
+}
+```
