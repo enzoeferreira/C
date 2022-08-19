@@ -111,6 +111,14 @@ void limpar_entrada()
 ### - Ler texto (fgets + tira o ENTER)
 
 ```cpp
+/*
+ * Usar para ler texto fgets e tirar a quebra de linha causada pelo ENTER
+ * (não dispensa o limpar entrada)
+ * Necessita da biblioteca string.h
+ */
+
+#include <string.h>
+
 void ler_texto(char var, int lenght)
 {
     fgets(var, lenght, stdin);
