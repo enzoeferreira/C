@@ -4,18 +4,22 @@
 # Lembretes
 ## Esqueleto Padrão
 
-    int main()
-    {
-        return 0;
-    }
+```c
+int main()
+{
+    return 0;
+}
+```
 
 ## Syntax
 
-    printf(""); -> print
-    // Precisa da biblioteca stdio.h
+```c
+printf(""); -> print
+// Precisa da biblioteca stdio.h
 
-    scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s não usar &
-    // Precisa da biblioteca stdio.h
+scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s não usar &
+// Precisa da biblioteca stdio.h
+```
 
 ### - Operadores
 
@@ -42,27 +46,33 @@
 
 Tipos de variáveis:
 
-    int
-    long int
-    long long int
-    float
-    double
-    char
-    char nome[n]
+```c
+int
+long int
+long long int
+float
+double
+char
+char nome[n]
+```
 
 ### - Atribuição de valor
 
-    int a = 5;
-    double b = 2.5;
-    char c = 'V';
-    strcpy(nome, "Carlos");
+```c
+int a = 5;
+double b = 2.5;
+char c = 'V';
+strcpy(nome, "Carlos");
+```
 
 Casting
 
-    int x;
-    double y;
+```c
+int x;
+double y;
 
-    y = (tipo) x;
+y = (tipo) x;
+```
 
 
 ### - Placeholders
@@ -79,16 +89,20 @@ Casting
 
 Exemplo de uso:
 
-    printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
-    printf("%.2lf", y) // Imprime a variável double y (2 casas decimais)
+```c
+printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
+printf("%.2lf", y) // Imprime a variável double y (2 casas decimais)
+```
 
 ## Funções importantes
 ### - Limpar entrada (ao usar fgets)
 
-    void limpar_entrada()
-    {
-        char c;
-        while ((c = getchar()) != '\n' && c != EOF) {}
-    }
+```c
+void limpar_entrada()
+{
+    char c;
+    while ((c = getchar()) != '\n' && c != EOF) {}
+}
+```
 
 
