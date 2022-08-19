@@ -14,7 +14,7 @@
     printf(""); -> print
     // Precisa da biblioteca stdio.h
 
-    scanf(); -> leitura de dados de tipos basicos (int, long int, float, char)
+    scanf("%placeholder", var); -> leitura de dados de tipos basicos (int, double etc)
     // Precisa da biblioteca stdio.h
 
 ### - Operadores
