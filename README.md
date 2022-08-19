@@ -2,6 +2,13 @@
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
 
 # Lembretes
+## Esqueleto Padrão
+
+    int main()
+    {
+        return 0;
+    }
+
 ## Syntax
 
     printf(""); -> print
