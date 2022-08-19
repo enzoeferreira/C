@@ -75,6 +75,8 @@ Casting
     %c    -> char
     %s    -> char[]
 
+    Obs: colocar um .x, sendo x algum número inteiro (Ex: .2), entre o % e o placeholder limita o número de casas decimais, pelo contrário o número terá 6 (mesmo que complete com 0's)
+
 Exemplo de uso:
 
     printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
