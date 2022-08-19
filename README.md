@@ -60,3 +60,4 @@ Tipos de variáveis:
 Exemplo de uso:
 
     printf("%d\n", x) // Imprime a variável inteira x (\n finaliza a linha)
+    printf("%.2lf", y) // Imprime a variável double y (2 casas decimais)
