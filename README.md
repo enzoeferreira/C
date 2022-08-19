@@ -43,8 +43,8 @@ Tipos de variáveis:
 
     int a = 5;
     double b = 2.5;
-    char c = 'V'
-    char[6] = "Carlos"
+    char c = 'V';
+    strcpy(nome, "Carlos");
 
 
 ### - Placeholders
