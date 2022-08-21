@@ -19,6 +19,9 @@ printf(""); -> print
 
 scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s não usar &
 // Precisa da biblioteca stdio.h
+
+fgets(var, lenght, stdin); -> textos e digitos até a quebra de linha (c/ espaço)
+// Precisa da biblioteca string.h
 ```
 
 ### - Operadores
