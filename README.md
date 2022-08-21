@@ -120,7 +120,7 @@ void limpar_entrada()
 
 #include <string.h>
 
-void ler_texto(char var, int lenght)
+void ler_texto(char *var, int lenght)
 {
     fgets(var, lenght, stdin);
     strtok(var, "\n");
