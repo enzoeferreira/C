@@ -17,7 +17,7 @@ int main()
 printf(""); // print
 // Precisa da biblioteca stdio.h
 
-scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&"
+scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
 // Precisa da biblioteca stdio.h
 
 fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
