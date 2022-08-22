@@ -14,13 +14,13 @@ int main()
 ## Syntax
 
 ```cpp
-printf(""); -> print
+printf(""); // print
 // Precisa da biblioteca stdio.h
 
-scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s não usar &
+scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&"
 // Precisa da biblioteca stdio.h
 
-fgets(var, lenght, stdin); -> textos e digitos até a quebra de linha (c/ espaço)
+fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
 // Precisa da biblioteca string.h
 
 if(condição)
