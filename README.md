@@ -40,6 +40,10 @@ while(condição)
 for(inicio; condição; incremento)
 {
 }
+
+do
+{
+} while (condição);
 ```
 
 ### - Operadores
