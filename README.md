@@ -36,6 +36,10 @@ else
 while(condição)
 {
 }
+
+for(inicio; condição; incremento)
+{
+}
 ```
 
 ### - Operadores
