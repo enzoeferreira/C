@@ -22,6 +22,16 @@ scanf("%placeholder", &var); -> textos e digitos sem espaços, no caso de %s nã
 
 fgets(var, lenght, stdin); -> textos e digitos até a quebra de linha (c/ espaço)
 // Precisa da biblioteca string.h
+
+if(condição)
+{    
+}
+else if(condição 2)
+{
+}
+else
+{
+}
 ```
 
 ### - Operadores
