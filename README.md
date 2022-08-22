@@ -78,7 +78,8 @@ long long int
 float
 double
 char
-char nome[n]
+char vetor[n]
+char matriz[m][n]
 ```
 
 ### - Atribuição de valor
