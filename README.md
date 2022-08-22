@@ -32,6 +32,10 @@ else if(condição 2)
 else
 {
 }
+
+while(condição)
+{
+}
 ```
 
 ### - Operadores
