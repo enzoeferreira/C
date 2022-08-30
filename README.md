@@ -127,8 +127,10 @@ y = (tipo) x;
     %c    -> char
     %s    -> char[]
 
-    Obs: colocar um .x, sendo x algum número inteiro (Ex: .2), entre o % e o placeholder
-    limita o número de casas decimais, por padrão o número terá 6 casas (completando com 0's)
+    Obs: colocar um x.y, sendo "x" e "'y" algum número inteiro (Ex: 2.2), entre o % e o placeholder
+    limita o número de casas antes e depois do ".", por padrão o número terá 6 casas (completando com 0's)
+
+
 
 Exemplo de uso:
 
