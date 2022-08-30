@@ -66,6 +66,21 @@ do
     || -> ou
     !  -> não
 
+    ++ -> Incremento
+    -- -> Decremento
+    Obs: n++ != ++n
+    n++ incrementa depois de executar, enquanto ++n incrementa antes de executar
+Exemplo:
+```c
+n = 5;
+x = n++;
+// x = 5 e n = 6
+
+n = 5;
+x = ++n;
+// x = 6 e n = 6
+```
+
 ### - Declaração de variáveis
 
     tipo nome;
