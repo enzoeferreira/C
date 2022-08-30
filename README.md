@@ -1,5 +1,6 @@
 # Estudos em C
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
+- ### [Youtube Playlist - Ponteiros (Canal De aluno para aluno)](https://youtube.com/playlist?list=PLa75BYTPDNKbhUVggmU3JUEBPibvh0C2t)
 
 # Lembretes
 ## Esqueleto Padrão
@@ -119,6 +120,16 @@ Exemplo de uso:
 ```cpp
 printf("%d\n", x); // Imprime a variável inteira x (\n finaliza a linha)
 printf("%.2lf", y); // Imprime a variável double y (2 casas decimais)
+```
+
+### Ponteiros
+
+```c
+tipo *ponteiro; // Declara um ponteiro
+ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variável "x"
+*ponteiro = y;  // O VALOR do ponteiro apontando pra a variável "x" vai ser o valor da variável "y"
+
+tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
 ```
 
 ## Funções importantes
