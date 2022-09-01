@@ -130,7 +130,9 @@ y = (tipo) x;
     Obs: colocar um x.y, sendo "x" e "'y" algum número inteiro (Ex: 2.2), entre o % e o placeholder
     limita o número de casas antes e depois do ".", por padrão o número terá 6 casas (completando com 0's)
 
-
+    %e -> Notação científica (Ex: 3.16e7 = 3.16*10^7)
+    %x -> Número hexadecimal
+    %u -> Decimal sem sinal
 
 Exemplo de uso:
 
