@@ -86,5 +86,8 @@ int main()
 
     trigonometria(unidade);
 
+    printf("\nPressiona ENTER para finalizar a execucao\n");
+    getchar();
+
     return 0;
 }
