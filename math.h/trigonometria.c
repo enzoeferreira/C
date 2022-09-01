@@ -3,9 +3,26 @@
 
 #define pi 3.141592
 
+double cossec(double ang)
+{
+    return (1 / sin(ang));
+}
+
+double cotan(double ang)
+{
+    return (1 / tan(ang));
+}
+
+double sec(double ang)
+{
+    return (1 / cos(ang));
+}
+
 void trigonometria(char unidade)
 {
     double rad, graus, ang;
+    int cosIgual0 = 0;
+    int senIgual0 = 0;
     
     if (unidade == 'R' || unidade == 'r')
     {
@@ -22,17 +39,41 @@ void trigonometria(char unidade)
             ang = graus * (pi / 180);
         }
 
-    printf("Sen = %.3lf\n", sin(ang));
-    printf("Cos = %.3lf\n", cos(ang));
-
     if (rad == 0.5 || rad == 1.5 || graus == 90 || graus == 270)
     {
-        printf("Tg = Nao Existe\n");
+        cosIgual0 = 1;
     }
-        else
+    if (rad == 0.0 || rad == 1.0 || graus == 0 || graus == 180)
+    {
+        senIgual0 = 1;
+    }
+
+    printf("Sen = %.3lf\n", sin(ang));
+    printf("Cos = %.3lf\n", cos(ang));
+    if (cosIgual0)
+    {
+        printf("Tg = Nao Existe\n");
+        
+        printf("\nCossec = %.3lf\n", cossec(ang));
+        printf("Sec = Nao Existe\n");
+        printf("Cotg = %.3lf\n", cotan(ang));
+    }
+        else if (senIgual0)
         {
             printf("Tg = %.3lf\n", tan(ang));
+
+            printf("\nCossec = Nao Existe\n");
+            printf("Sec = %.3lf\n", sec(ang));
+            printf("Cotg = Nao Existe\n");
         }
+            else
+            {
+                printf("Tg = %.3lf\n", tan(ang));
+
+                printf("\nCossec = %.3lf\n", cossec(ang));
+                printf("Sec = %.3lf\n", sec(ang));
+                printf("Cotg = %.3lf\n", cotan(ang));
+            }
 }
 
 int main()
