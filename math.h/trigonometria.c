@@ -3,56 +3,47 @@
 
 #define pi 3.141592
 
-int main()
+void trigonometria(char unidade)
 {
     double rad, graus, ang;
+    
+    if (unidade == 'R' || unidade == 'r')
+    {
+        printf("Digite a medida em pi radianos (0 a 2): ");
+        scanf("%lf", &rad);
+        
+        ang = rad * pi;
+    }
+        else if (unidade == 'G' || unidade == 'g')
+        {
+            printf("Digite a medida em graus (0 a 360): ");
+            scanf("%lf", &graus);
+
+            ang = graus * (pi / 180);
+        }
+
+    printf("Sen = %.3lf\n", sin(ang));
+    printf("Cos = %.3lf\n", cos(ang));
+
+    if (rad == 0.5 || rad == 1.5 || graus == 90 || graus == 270)
+    {
+        printf("Tg = Nao Existe\n");
+    }
+        else
+        {
+            printf("Tg = %.3lf\n", tan(ang));
+        }
+}
+
+int main()
+{
+    double rad, graus;
     char unidade;
 
     printf("Quer a unidade de medida em radianos ou graus? (R/G) ");
     scanf("%c", &unidade);
-    
-    if(unidade == 'R' || unidade == 'r')
-    {        
-        printf("Digite um angulo em pi radianos: ");
-        scanf("%lf", &rad);
 
-        ang = rad * pi;
-
-        printf("\nSen(%.3lf rad) = %.3lf", rad, sin(ang));
-        printf("\nCos(%.3lf rad) = %.3lf", rad, cos(ang));
-        printf("\nTg(%.3lf rad) = %.3lf", rad, tan(ang));
-
-        printf("\n\nCossec(%.3lf rad) = %.3lf", rad, (1 / sin(ang)));
-        printf("\nSec(%.3lf rad) = %.3lf", rad, (1 / cos(ang)));
-        printf("\nCotg(%.3lf rad) = %.3lf", rad, (cos(ang) / sin(ang)));
-
-        printf("\n\nSenh(%.3lf rad) = %.3lf", rad, sinh(ang));
-        printf("\nCosh(%.3lf rad) = %.3lf", rad, cosh(ang));
-        printf("\nTanh(%.3lf rad) = %.3lf", rad, tanh(ang));
-    }
-        else if(unidade == 'G' || unidade == 'g')
-        {
-            printf("Digite um angulo em graus: ");
-            scanf("%lf", &graus);
-
-            ang = graus * (pi/180);
-
-            printf("\nSen(%.3lf rad) = %.3lf", graus, sin(ang));
-            printf("\nCos(%.3lf rad) = %.3lf", graus, cos(ang));
-            printf("\nTg(%.3lf rad) = %.3lf", graus, tan(ang));
-
-            printf("\n\nCossec(%.3lf rad) = %.3lf", graus, (1 / sin(ang)));
-            printf("\nSec(%.3lf rad) = %.3lf", graus, (1 / cos(ang)));
-            printf("\nCotg(%.3lf rad) = %.3lf", graus, (cos(ang) / sin(ang)));
-
-            printf("\n\nSenh(%.3lf rad) = %.3lf", graus, sinh(ang));
-            printf("\nCosh(%.3lf rad) = %.3lf", graus, cosh(ang));
-            printf("\nTanh(%.3lf rad) = %.3lf", graus, tanh(ang));
-        }
-            else
-            {
-                printf("\nUnidade invalida.");
-            }
+    trigonometria(unidade);
 
     return 0;
 }
