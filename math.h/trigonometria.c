@@ -10,7 +10,7 @@ int main()
 
     printf("Quer a unidade de medida em radianos ou graus? (R/G) ");
     scanf("%c", &unidade);
-
+    
     if(unidade == 'R' || unidade == 'r')
     {        
         printf("Digite um angulo em pi radianos: ");
