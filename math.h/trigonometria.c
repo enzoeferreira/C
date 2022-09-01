@@ -88,6 +88,7 @@ int main()
 
     printf("\nPressiona ENTER para finalizar a execucao\n");
     getchar();
+    getchar();
 
     return 0;
 }
