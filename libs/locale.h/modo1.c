@@ -9,10 +9,8 @@ int main()
 
     SetConsoleOutputCP(CPAGE_UTF8);
 
-
 // O código/print ficará nessa parte
 
-    
     printf("Este é um teste de acentuação");
 
     SetConsoleOutputCP(CPAGE_DEFAULT);
