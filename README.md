@@ -5,7 +5,11 @@
   - [Comandos de repetição](#comandos-de-repetição)
   - [- Operadores](#--operadores)
   - [- Declaração de variáveis](#--declaração-de-variáveis)
+    - [- Modificadores](#--modificadores)
+    - [- Sinônimos](#--sinônimos)
+      - [- typedef](#--typedef)
   - [- Atribuição de valor](#--atribuição-de-valor)
+  - [- Casting](#--casting)
   - [- Placeholders](#--placeholders)
   - [Ponteiros](#ponteiros)
 - [Funções](#funções)
@@ -118,7 +122,7 @@ char vetor[n]
 char matriz[m][n]
 ```
 
-Modificadores:
+### - Modificadores
 
     short    -> int
         Geralmente o compilador armazena menos espaço
@@ -129,7 +133,7 @@ Modificadores:
     signed   -> char e int
         Inteiro com sinal
 
-Sinônimos:
+### - Sinônimos
 
     int = signed int
     short = short int
@@ -137,6 +141,13 @@ Sinônimos:
     long long = long long int
     unsigned = unsigned int
     signed = signed int = int
+
+#### - typedef
+
+```c
+typedef int bool; // Cria o sinônimo "bool" para int
+typedef unsigned int natural; // Cria o sinônimo "natural" para int
+```
 
 ## - Atribuição de valor
 
@@ -147,7 +158,7 @@ char c = 'V';
 strcpy(nome, "Carlos");
 ```
 
-Casting
+## - Casting
 
 ```c
 int x;
