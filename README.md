@@ -169,6 +169,7 @@ printf("%.2lf", y); // Imprime a variável double y (2 casas decimais)
 tipo *ponteiro; // Declara um ponteiro
 ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variável "x"
 *ponteiro = y;  // O VALOR do ponteiro apontando pra a variável "x" vai ser o valor da variável "y"
+x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
 
 tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
 ```
