@@ -1,12 +1,17 @@
 - [Estudos em C](#estudos-em-c)
-- [Lembretes](#lembretes)
+- [Syntax](#syntax)
+  - [Comentários](#comentários)
   - [Esqueleto Padrão](#esqueleto-padrão)
-  - [Syntax](#syntax)
-    - [- Operadores](#--operadores)
-    - [- Declaração de variáveis](#--declaração-de-variáveis)
-    - [- Atribuição de valor](#--atribuição-de-valor)
-    - [- Placeholders](#--placeholders)
-    - [Ponteiros](#ponteiros)
+  - [Comandos de repetição](#comandos-de-repetição)
+  - [- Operadores](#--operadores)
+  - [- Declaração de variáveis](#--declaração-de-variáveis)
+  - [- Atribuição de valor](#--atribuição-de-valor)
+  - [- Placeholders](#--placeholders)
+  - [Ponteiros](#ponteiros)
+- [Funções](#funções)
+  - [printf()](#printf)
+  - [scanf()](#scanf)
+  - [fgets()](#fgets)
   - [Funções importantes](#funções-importantes)
     - [- Limpar entrada (p/ usar fgets)](#--limpar-entrada-p-usar-fgets)
     - [- Ler texto (fgets + tira o ENTER)](#--ler-texto-fgets--tira-o-enter)
@@ -15,28 +20,31 @@
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
 - ### [Youtube Playlist - Ponteiros (Canal De aluno para aluno)](https://youtube.com/playlist?list=PLa75BYTPDNKbhUVggmU3JUEBPibvh0C2t)
 
-# Lembretes
+# Syntax
+
+## Comentários
+
+```c
+// Comentários na linha utilizam "//"
+
+/*
+ * Comentários em várias linhas
+ * utilizam no início "/*"
+ * e no fim o inverso
+ */
+```
 ## Esqueleto Padrão
 
-```cpp
+```c
 int main()
 {
     return 0;
 }
 ```
 
-## Syntax
+## Comandos de repetição
 
-```cpp
-printf(""); // print
-// Precisa da biblioteca stdio.h
-
-scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
-// Precisa da biblioteca stdio.h
-
-fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
-// Precisa da biblioteca string.h
-
+```c
 if(condição)
 {    
 }
@@ -60,7 +68,7 @@ do
 } while (condição);
 ```
 
-### - Operadores
+## - Operadores
 
     + -> Adição
     - -> Subtração
@@ -83,6 +91,7 @@ do
     -- -> Decremento
     Obs: n++ != ++n
     n++ incrementa depois de executar, enquanto ++n incrementa antes de executar
+
 Exemplo:
 ```c
 n = 5;
@@ -94,13 +103,13 @@ x = ++n;
 // x = 6 e n = 6
 ```
 
-### - Declaração de variáveis
+## - Declaração de variáveis
 
     tipo nome;
 
 Tipos de variáveis:
 
-```cpp
+```c
 int
 long int
 long long int
@@ -111,9 +120,9 @@ char vetor[n]
 char matriz[m][n]
 ```
 
-### - Atribuição de valor
+## - Atribuição de valor
 
-```cpp
+```c
 int a = 5;
 double b = 2.5;
 char c = 'V';
@@ -122,15 +131,14 @@ strcpy(nome, "Carlos");
 
 Casting
 
-```cpp
+```c
 int x;
 double y;
 
 y = (tipo) x;
 ```
 
-
-### - Placeholders
+## - Placeholders
 
     %d/%i -> int
     %li   -> long int
@@ -149,12 +157,12 @@ y = (tipo) x;
 
 Exemplo de uso:
 
-```cpp
+```c
 printf("%d\n", x); // Imprime a variável inteira x (\n finaliza a linha)
 printf("%.2lf", y); // Imprime a variável double y (2 casas decimais)
 ```
 
-### Ponteiros
+## Ponteiros
 
 ```c
 tipo *ponteiro; // Declara um ponteiro
@@ -164,10 +172,35 @@ ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variáv
 tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
 ```
 
+# Funções
+
+## printf()
+
+```c
+printf(""); // print
+// Precisa da biblioteca stdio.h
+```
+
+## scanf()
+
+```c
+scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
+// Precisa da biblioteca stdio.h
+```
+
+## fgets()
+
+```c
+fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
+// Precisa da biblioteca string.h
+```
+
+
+
 ## Funções importantes
 ### - Limpar entrada (p/ usar fgets)
 
-```cpp
+```c
 /*
  * Usar para limpar entrada antes do fgets
  */
@@ -180,7 +213,7 @@ void limpar_entrada()
 ```
 ### - Ler texto (fgets + tira o ENTER)
 
-```cpp
+```c
 /*
  * Usar para ler texto fgets e tirar a quebra de linha causada pelo ENTER
  * (não dispensa o limpar entrada)
