@@ -111,14 +111,32 @@ Tipos de variáveis:
 
 ```c
 int
-long int
-long long int
 float
 double
 char
 char vetor[n]
 char matriz[m][n]
 ```
+
+Modificadores:
+
+    short    -> int
+        Geralmente o compilador armazena menos espaço
+    long     -> int e double
+        Geralmente o compilador armazena mais espaço
+    unsigned -> char e int
+        Inteiro sem sinal (0+)
+    signed   -> char e int
+        Inteiro com sinal
+
+Sinônimos:
+
+    int = signed int
+    short = short int
+    long = long int
+    long long = long long int
+    unsigned = unsigned int
+    signed = signed int = int
 
 ## - Atribuição de valor
 
