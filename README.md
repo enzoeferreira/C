@@ -1,3 +1,16 @@
+- [Estudos em C](#estudos-em-c)
+- [Lembretes](#lembretes)
+  - [Esqueleto Padrão](#esqueleto-padrão)
+  - [Syntax](#syntax)
+    - [- Operadores](#--operadores)
+    - [- Declaração de variáveis](#--declaração-de-variáveis)
+    - [- Atribuição de valor](#--atribuição-de-valor)
+    - [- Placeholders](#--placeholders)
+    - [Ponteiros](#ponteiros)
+  - [Funções importantes](#funções-importantes)
+    - [- Limpar entrada (p/ usar fgets)](#--limpar-entrada-p-usar-fgets)
+    - [- Ler texto (fgets + tira o ENTER)](#--ler-texto-fgets--tira-o-enter)
+
 # Estudos em C
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
 - ### [Youtube Playlist - Ponteiros (Canal De aluno para aluno)](https://youtube.com/playlist?list=PLa75BYTPDNKbhUVggmU3JUEBPibvh0C2t)
