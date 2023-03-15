@@ -5,6 +5,7 @@
   - [Comandos de repetição](#comandos-de-repetição)
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [- Operadores](#--operadores)
+    - [Operadores bit a bit](#operadores-bit-a-bit)
   - [- Declaração de variáveis](#--declaração-de-variáveis)
     - [- Modificadores](#--modificadores)
     - [- Sinônimos](#--sinônimos)
@@ -172,6 +173,41 @@ x = n++;
 n = 5;
 x = ++n;
 // x = 6 e n = 6
+```
+
+### Operadores bit a bit
+Se aplicam a tipos integrais
+Aplicam a operação bit a bit
+
+    & -> and
+    | -> or
+    ^ -> xor
+    ~ -> not
+    << -> Deslocamento à esquerda
+    >> -> Deslocamento à direita
+
+Exemplo:
+```
+  1011 0101
+& 1111 0110
+  ---------
+  1011 0100
+
+  1011 0101
+| 1111 0110
+  ---------
+  1111 0111
+
+  1011 0101
+       << 1
+  ---------
+  0110 1010
+OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
+
+  1011 0101
+       >> 1
+  ---------
+  0101 1010
 ```
 
 ## - Declaração de variáveis
