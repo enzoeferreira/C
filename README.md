@@ -6,6 +6,7 @@
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [- Operadores](#--operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
+    - [sizeof()](#sizeof)
   - [- Declaração de variáveis](#--declaração-de-variáveis)
     - [- Modificadores](#--modificadores)
     - [- Sinônimos](#--sinônimos)
@@ -208,6 +209,13 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
        >> 1
   ---------
   0101 1010
+```
+
+### sizeof()
+Retorna quantos bytes tem seu argumento
+```c
+sizeof(int)
+sizeof(n)
 ```
 
 ## - Declaração de variáveis
