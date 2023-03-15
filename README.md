@@ -71,6 +71,12 @@ do
 for(inicio; condição; incremento)
 {
 }
+/* Omitindo argumentos:
+ * for(;;)
+ * 
+ * Caso uma variável seja definida dentro do for
+ * seu escopo será apenas o for
+ */
 
 // Equivalencia do for em while
 inicio;
