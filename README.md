@@ -156,6 +156,7 @@ identificador : sentença;
     && -> e
     || -> ou
     !  -> não
+    Obs: && e || param de executar se o resultado puder ser decidido
 
     ++ -> Incremento
     -- -> Decremento
