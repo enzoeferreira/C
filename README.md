@@ -64,13 +64,20 @@ while(condição)
 {
 }
 
+do
+{
+} while (condição);
+
 for(inicio; condição; incremento)
 {
 }
 
-do
+// Equivalencia do for em while
+inicio;
+while (condição)
 {
-} while (condição);
+    incremento;
+}
 ```
 
 ## - Operadores
