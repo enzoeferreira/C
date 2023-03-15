@@ -52,24 +52,31 @@ int main()
 ```c
 if(condição)
 {    
+    // Sentenças
 }
 else if(condição 2)
 {
+    // Sentenças
 }
 else
 {
+    // Sentenças
 }
 
 while(condição)
 {
+    // Sentenças
 }
 
 do
 {
+    // Sentenças
 } while (condição);
+// No "do" o teste é feito depois, então executará ao menos 1x
 
 for(inicio; condição; incremento)
 {
+    // Sentenças
 }
 /* Omitindo argumentos:
  * for(;;)
@@ -82,6 +89,7 @@ for(inicio; condição; incremento)
 inicio;
 while (condição)
 {
+    // Sentenças
     incremento;
 }
 ```
