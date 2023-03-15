@@ -3,6 +3,7 @@
   - [Comentários](#comentários)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Comandos de repetição](#comandos-de-repetição)
+  - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [- Operadores](#--operadores)
   - [- Declaração de variáveis](#--declaração-de-variáveis)
     - [- Modificadores](#--modificadores)
@@ -121,6 +122,20 @@ switch (expressão_integral)
     default:
         // Sentenças
 }
+```
+
+## Desvios incondicionais (break, continue, goto)
+
+Não recomendado por quebrar fluxo de comandos e piorar legibilidade
+```c
+break; // Termina uma repetição ou switch
+
+continue; // Interrompe apenas uma iteração, voltando pro teste
+// Pode ser usado em for, while e do
+
+goto identificador;
+// Salta para uma sentença rotulada, por exemplo
+identificador : sentença;
 ```
 
 ## - Operadores
