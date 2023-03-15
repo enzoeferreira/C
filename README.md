@@ -49,6 +49,7 @@ int main()
 
 ## Comandos de repetição
 
+if()
 ```c
 if(condição)
 {    
@@ -62,13 +63,31 @@ else
 {
     // Sentenças
 }
+```
 
+Ternário
+```c
+condição ? verdadeiro : falso
+```
+while
+```c
 while(condição)
 {
     // Sentenças
 }
+```
 
+do
+```c
+do
+{
+    // Sentenças
+} while (condição);
+// No "do" o teste é feito depois, então executará ao menos 1x
+```
 
+for
+```c
 for(inicio; condição; incremento)
 {
     // Sentenças
@@ -87,13 +106,10 @@ while (condição)
     // Sentenças
     incremento;
 }
+```
 
-do
-{
-    // Sentenças
-} while (condição);
-// No "do" o teste é feito depois, então executará ao menos 1x
-
+switch
+```c
 switch (expressão_integral)
 {
     case constante_integral:
