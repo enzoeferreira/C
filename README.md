@@ -14,6 +14,7 @@
   - [Ponteiros](#ponteiros)
 - [Funções](#funções)
   - [printf()](#printf)
+  - [puts()](#puts)
   - [scanf()](#scanf)
   - [fgets()](#fgets)
   - [Funções importantes](#funções-importantes)
@@ -209,6 +210,13 @@ tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da vari
 
 ```c
 printf(""); // print
+// Precisa da biblioteca stdio.h
+```
+
+## puts()
+
+```c
+puts(""); // print de apenas uma string
 // Precisa da biblioteca stdio.h
 ```
 
