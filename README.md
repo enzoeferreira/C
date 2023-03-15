@@ -68,11 +68,6 @@ while(condição)
     // Sentenças
 }
 
-do
-{
-    // Sentenças
-} while (condição);
-// No "do" o teste é feito depois, então executará ao menos 1x
 
 for(inicio; condição; incremento)
 {
@@ -91,6 +86,24 @@ while (condição)
 {
     // Sentenças
     incremento;
+}
+
+do
+{
+    // Sentenças
+} while (condição);
+// No "do" o teste é feito depois, então executará ao menos 1x
+
+switch (expressão_integral)
+{
+    case constante_integral:
+        // Sentenças
+
+    case constante_integral:
+        // Sentenças
+
+    default:
+        // Sentenças
 }
 ```
 
