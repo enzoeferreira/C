@@ -4,16 +4,16 @@
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Comandos de repetição](#comandos-de-repetição)
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
-  - [- Operadores](#--operadores)
+  - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
     - [sizeof()](#sizeof)
-  - [- Declaração de variáveis](#--declaração-de-variáveis)
-    - [- Modificadores](#--modificadores)
-    - [- Sinônimos](#--sinônimos)
-      - [- typedef](#--typedef)
-  - [- Atribuição de valor](#--atribuição-de-valor)
-  - [- Casting](#--casting)
-  - [- Placeholders](#--placeholders)
+  - [Declaração de variáveis](#declaração-de-variáveis)
+    - [Modificadores](#modificadores)
+    - [Sinônimos](#sinônimos)
+      - [typedef](#typedef)
+  - [Atribuição de valor](#atribuição-de-valor)
+  - [Casting](#casting)
+  - [Placeholders](#placeholders)
   - [Ponteiros](#ponteiros)
 - [Funções](#funções)
   - [printf()](#printf)
@@ -21,8 +21,8 @@
   - [scanf()](#scanf)
   - [fgets()](#fgets)
   - [Funções importantes](#funções-importantes)
-    - [- Limpar entrada (p/ usar fgets)](#--limpar-entrada-p-usar-fgets)
-    - [- Ler texto (fgets + tira o ENTER)](#--ler-texto-fgets--tira-o-enter)
+    - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
+    - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
 
 # Estudos em C
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
@@ -140,7 +140,7 @@ goto identificador;
 identificador : sentença;
 ```
 
-## - Operadores
+## Operadores
 
     + -> Adição
     - -> Subtração
@@ -218,7 +218,7 @@ sizeof(int)
 sizeof(n)
 ```
 
-## - Declaração de variáveis
+## Declaração de variáveis
 
     tipo nome;
 
@@ -233,7 +233,7 @@ char vetor[n]
 char matriz[m][n]
 ```
 
-### - Modificadores
+### Modificadores
 
     short    -> int
         Geralmente o compilador armazena menos espaço
@@ -244,7 +244,7 @@ char matriz[m][n]
     signed   -> char e int
         Inteiro com sinal
 
-### - Sinônimos
+### Sinônimos
 
     int = signed int
     short = short int
@@ -253,14 +253,14 @@ char matriz[m][n]
     unsigned = unsigned int
     signed = signed int = int
 
-#### - typedef
+#### typedef
 
 ```c
 typedef int bool; // Cria o sinônimo "bool" para int
 typedef unsigned int natural; // Cria o sinônimo "natural" para int
 ```
 
-## - Atribuição de valor
+## Atribuição de valor
 
 ```c
 int a = 5;
@@ -269,7 +269,7 @@ char c = 'V';
 strcpy(nome, "Carlos");
 ```
 
-## - Casting
+## Casting
 
 ```c
 int x;
@@ -278,7 +278,7 @@ double y;
 y = (tipo) x;
 ```
 
-## - Placeholders
+## Placeholders
 
     %d/%i -> int
     %li   -> long int
@@ -347,7 +347,7 @@ fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaç
 
 
 ## Funções importantes
-### - Limpar entrada (p/ usar fgets)
+### Limpar entrada (p/ usar fgets)
 
 ```c
 /*
@@ -360,7 +360,7 @@ void limpar_entrada()
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 ```
-### - Ler texto (fgets + tira o ENTER)
+### Ler texto (fgets + tira o ENTER)
 
 ```c
 /*
