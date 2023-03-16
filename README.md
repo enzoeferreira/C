@@ -6,11 +6,12 @@
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
-    - [sizeof()](#sizeof)
   - [Declaração de variáveis](#declaração-de-variáveis)
-    - [Modificadores](#modificadores)
-    - [Sinônimos](#sinônimos)
+    - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
+      - [sizeof()](#sizeof)
+    - [Modificadores](#modificadores)
+      - [Sinônimos](#sinônimos)
   - [Atribuição de valor](#atribuição-de-valor)
   - [Casting](#casting)
   - [Placeholders](#placeholders)
@@ -177,6 +178,7 @@ x = ++n;
 ```
 
 ### Operadores bit a bit
+
 Se aplicam a tipos integrais
 Aplicam a operação bit a bit
 
@@ -211,18 +213,11 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
   0101 1010
 ```
 
-### sizeof()
-Retorna quantos bytes tem seu argumento
-```c
-sizeof(int)
-sizeof(n)
-```
-
 ## Declaração de variáveis
 
-    tipo nome;
+    qualificador* modificador* tipo nome1, nome2, ...;
 
-Tipos de variáveis:
+### Tipos de variáveis:
 
 ```c
 int
@@ -231,6 +226,20 @@ double
 char
 char vetor[n]
 char matriz[m][n]
+```
+
+#### typedef
+
+```c
+typedef int inteiro; // Cria o sinônimo "inteiro" para int
+typedef unsigned int natural; // Cria o sinônimo "natural" para int
+```
+
+#### sizeof()
+Retorna um inteiro indicando quantos bytes tem seu argumento
+```c
+sizeof(int) // Retorna o n° de bytes para o tipo "int"
+sizeof(n) // Retorna o n° de bytes para a variável "n"
 ```
 
 ### Modificadores
@@ -244,7 +253,7 @@ char matriz[m][n]
     signed   -> char e int
         Inteiro com sinal
 
-### Sinônimos
+#### Sinônimos
 
     int = signed int
     short = short int
@@ -253,12 +262,6 @@ char matriz[m][n]
     unsigned = unsigned int
     signed = signed int = int
 
-#### typedef
-
-```c
-typedef int bool; // Cria o sinônimo "bool" para int
-typedef unsigned int natural; // Cria o sinônimo "natural" para int
-```
 
 ## Atribuição de valor
 
