@@ -155,6 +155,9 @@ identificador : sentença;
     <= -> Menor ou igual
     == -> Igual
     != -> Diferente
+    ...
+    var op= expressão equivale a var = var op expressão
+    Ex: i /= 2 equivale a i = i/2
 
     && -> e
     || -> ou
@@ -257,7 +260,7 @@ sizeof(n) // Retorna o n° de bytes para a variável "n"
 
     signed    -> char e int
         Inteiro com sinal
-        
+
 
 #### Sinônimos
 
