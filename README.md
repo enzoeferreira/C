@@ -244,14 +244,20 @@ sizeof(n) // Retorna o n° de bytes para a variável "n"
 
 ### Modificadores
 
-    short    -> int
+    short     -> int
         Geralmente o compilador armazena menos espaço
-    long     -> int e double
+
+    long      -> int e double
         Geralmente o compilador armazena mais espaço
-    unsigned -> char e int
+
+    long long -> int
+
+    unsigned  -> char e int
         Inteiro sem sinal (0+)
-    signed   -> char e int
+
+    signed    -> char e int
         Inteiro com sinal
+        
 
 #### Sinônimos
 
