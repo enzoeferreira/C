@@ -15,6 +15,8 @@
   - [- Casting](#--casting)
   - [- Placeholders](#--placeholders)
   - [Ponteiros](#ponteiros)
+- [Bibliotecas](#bibliotecas)
+  - [stdio](#stdio)
 - [Funções](#funções)
   - [printf()](#printf)
   - [puts()](#puts)
@@ -313,6 +315,10 @@ x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
 
 tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
 ```
+
+# Bibliotecas
+
+## stdio
 
 # Funções
 
