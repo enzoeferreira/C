@@ -6,6 +6,7 @@
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
+<<<<<<< HEAD
     - [sizeof()](#sizeof)
   - [Declaração de variáveis](#declaração-de-variáveis)
     - [Modificadores](#modificadores)
@@ -24,6 +25,17 @@
       - [Conversões g, G](#conversões-g-g)
       - [Conversões s, S](#conversões-s-s)
     - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
+=======
+  - [Declaração de variáveis](#declaração-de-variáveis)
+    - [Tipos de variáveis:](#tipos-de-variáveis)
+      - [typedef](#typedef)
+      - [sizeof()](#sizeof)
+    - [Modificadores](#modificadores)
+      - [Sinônimos](#sinônimos)
+  - [Atribuição de valor](#atribuição-de-valor)
+  - [Casting](#casting)
+  - [Placeholders](#placeholders)
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
   - [Ponteiros](#ponteiros)
 - [Bibliotecas](#bibliotecas)
   - [stdio](#stdio)
@@ -33,8 +45,8 @@
   - [scanf()](#scanf)
   - [fgets()](#fgets)
   - [Funções importantes](#funções-importantes)
-    - [- Limpar entrada (p/ usar fgets)](#--limpar-entrada-p-usar-fgets)
-    - [- Ler texto (fgets + tira o ENTER)](#--ler-texto-fgets--tira-o-enter)
+    - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
+    - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
 
 # Estudos em C
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
@@ -166,6 +178,9 @@ identificador : sentença;
     <= -> Menor ou igual
     == -> Igual
     != -> Diferente
+    ...
+    var op= expressão equivale a var = var op expressão
+    Ex: i /= 2 equivale a i = i/2
 
     && -> e
     || -> ou
@@ -189,6 +204,7 @@ x = ++n;
 ```
 
 ### Operadores bit a bit
+
 Se aplicam a tipos integrais
 Aplicam a operação bit a bit
 
@@ -223,18 +239,15 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
   0101 1010
 ```
 
-### sizeof()
-Retorna quantos bytes tem seu argumento
-```c
-sizeof(int)
-sizeof(n)
-```
-
 ## Declaração de variáveis
 
-    tipo nome;
+<<<<<<< HEAD
+## Declaração de variáveis
+=======
+    qualificador* modificador* tipo nome1, nome2, ...;
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
 
-Tipos de variáveis:
+### Tipos de variáveis:
 
 ```c
 int
@@ -245,18 +258,46 @@ char vetor[n]
 char matriz[m][n]
 ```
 
+<<<<<<< HEAD
+### Modificadores
+=======
+#### typedef
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
+
+```c
+typedef int inteiro; // Cria o sinônimo "inteiro" para int
+typedef unsigned int natural; // Cria o sinônimo "natural" para int
+```
+
+#### sizeof()
+Retorna um inteiro indicando quantos bytes tem seu argumento
+```c
+sizeof(int) // Retorna o n° de bytes para o tipo "int"
+sizeof(n) // Retorna o n° de bytes para a variável "n"
+```
+
 ### Modificadores
 
-    short    -> int
+    short     -> int
         Geralmente o compilador armazena menos espaço
-    long     -> int e double
+
+    long      -> int e double
         Geralmente o compilador armazena mais espaço
-    unsigned -> char e int
+
+    long long -> int
+
+    unsigned  -> char e int
         Inteiro sem sinal (0+)
-    signed   -> char e int
+
+    signed    -> char e int
         Inteiro com sinal
 
+<<<<<<< HEAD
 ### Sinônimos
+=======
+
+#### Sinônimos
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
 
     int = signed int
     short = short int
@@ -265,6 +306,7 @@ char matriz[m][n]
     unsigned = unsigned int
     signed = signed int = int
 
+<<<<<<< HEAD
 #### typedef
 
 ```c
@@ -272,6 +314,9 @@ typedef int bool; // Cria o sinônimo "bool" para int
 typedef unsigned int natural; // Cria o sinônimo "natural" para int
 ```
 
+=======
+
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
 ## Atribuição de valor
 
 ```c
@@ -290,6 +335,7 @@ double y;
 y = (tipo) x;
 ```
 
+<<<<<<< HEAD
 ## Especificação de conversão
 
 ### %[parametro][flags][largura][.precisão][tamanho]conversão
@@ -319,6 +365,9 @@ y = (tipo) x;
     Número máximo de caracteres impressos
 
 ### [tamanho] (Placeholders)
+=======
+## Placeholders
+>>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
 
     %d/%i -> int
     %f    -> float
@@ -404,7 +453,7 @@ fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaç
 
 
 ## Funções importantes
-### - Limpar entrada (p/ usar fgets)
+### Limpar entrada (p/ usar fgets)
 
 ```c
 /*
@@ -417,7 +466,7 @@ void limpar_entrada()
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 ```
-### - Ler texto (fgets + tira o ENTER)
+### Ler texto (fgets + tira o ENTER)
 
 ```c
 /*
