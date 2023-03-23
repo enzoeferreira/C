@@ -10,7 +10,7 @@
   - [Declaração de variáveis](#declaração-de-variáveis)
     - [Modificadores](#modificadores)
     - [Sinônimos](#sinônimos)
-      - [- typedef](#--typedef)
+      - [typedef](#typedef)
   - [Atribuição de valor](#atribuição-de-valor)
   - [Casting](#casting)
   - [Placeholders](#placeholders)
@@ -255,7 +255,7 @@ char matriz[m][n]
     unsigned = unsigned int
     signed = signed int = int
 
-#### - typedef
+#### typedef
 
 ```c
 typedef int bool; // Cria o sinônimo "bool" para int
