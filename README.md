@@ -13,7 +13,17 @@
       - [typedef](#typedef)
   - [Atribuição de valor](#atribuição-de-valor)
   - [Casting](#casting)
-  - [Placeholders](#placeholders)
+  - [Especificação de conversão](#especificação-de-conversão)
+    - [%\[parametro\]\[flags\]\[largura\]\[.precisão\]\[tamanho\]conversão](#parametroflagslarguraprecisãotamanhoconversão)
+    - [\[parametro\]](#parametro)
+    - [\[flags\]](#flags)
+    - [\[largura\]](#largura)
+    - [\[.precisão\]](#precisão)
+      - [Conversões d, i, o, u, x, X](#conversões-d-i-o-u-x-x)
+      - [Conversões a, A, e, E, f, F](#conversões-a-a-e-e-f-f)
+      - [Conversões g, G](#conversões-g-g)
+      - [Conversões s, S](#conversões-s-s)
+    - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
   - [Ponteiros](#ponteiros)
 - [Bibliotecas](#bibliotecas)
   - [stdio](#stdio)
@@ -280,7 +290,35 @@ double y;
 y = (tipo) x;
 ```
 
-## Placeholders
+## Especificação de conversão
+
+### %[parametro][flags][largura][.precisão][tamanho]conversão
+
+### [parametro]
+
+### [flags]
+
+### [largura]
+
+### [.precisão]
+
+#### Conversões d, i, o, u, x, X
+    
+    Número mínimo de dígitos que deve ser mostrado
+
+#### Conversões a, A, e, E, f, F
+
+    Número mínimo à direita da vírgula
+
+#### Conversões g, G
+
+    Número máximo de dígitos significativos
+
+#### Conversões s, S
+
+    Número máximo de caracteres impressos
+
+### [tamanho] (Placeholders)
 
     %d/%i -> int
     %f    -> float
@@ -289,8 +327,6 @@ y = (tipo) x;
     %s    -> char[]
     %p    -> endereço
 
-    Obs: colocar um x.y, sendo "x" e "'y" algum número inteiro (Ex: 2.2), entre o % e o placeholder
-    limita o número de casas antes e depois do ".", por padrão o número terá 6 casas (completando com 0's)
 
     %u    -> unsigned int
 
