@@ -283,8 +283,6 @@ y = (tipo) x;
 ## - Placeholders
 
     %d/%i -> int
-    %li   -> long int
-    %lli  -> long long int
     %f    -> float
     %lf   -> double
     %c    -> char
@@ -294,9 +292,23 @@ y = (tipo) x;
     Obs: colocar um x.y, sendo "x" e "'y" algum número inteiro (Ex: 2.2), entre o % e o placeholder
     limita o número de casas antes e depois do ".", por padrão o número terá 6 casas (completando com 0's)
 
-    %e -> Notação científica (Ex: 3.16e7 = 3.16*10^7)
+    %u    -> unsigned int
+
+    %hi   -> short int
+    %hu   -> short int (unsigned)
+
+    %li   -> long int
+    %lu   -> long int (unsigned)
+
+    %lli  -> long long int
+    %llu  -> long long int (unsigned)
+
+    %e  -> (float) Notação científica (Ex: 3.16e7 = 3.16*10^7)
+    %le -> (double) Notação científica
+
+    %Lf -> long double
+    
     %x -> Número hexadecimal
-    %u -> Decimal sem sinal
 
 Exemplo de uso:
 
