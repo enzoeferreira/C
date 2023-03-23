@@ -4,16 +4,16 @@
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Comandos de repetição](#comandos-de-repetição)
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
-  - [- Operadores](#--operadores)
+  - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
     - [sizeof()](#sizeof)
-  - [- Declaração de variáveis](#--declaração-de-variáveis)
-    - [- Modificadores](#--modificadores)
-    - [- Sinônimos](#--sinônimos)
+  - [Declaração de variáveis](#declaração-de-variáveis)
+    - [Modificadores](#modificadores)
+    - [Sinônimos](#sinônimos)
       - [- typedef](#--typedef)
-  - [- Atribuição de valor](#--atribuição-de-valor)
-  - [- Casting](#--casting)
-  - [- Placeholders](#--placeholders)
+  - [Atribuição de valor](#atribuição-de-valor)
+  - [Casting](#casting)
+  - [Placeholders](#placeholders)
   - [Ponteiros](#ponteiros)
 - [Bibliotecas](#bibliotecas)
   - [stdio](#stdio)
@@ -142,7 +142,7 @@ goto identificador;
 identificador : sentença;
 ```
 
-## - Operadores
+## Operadores
 
     + -> Adição
     - -> Subtração
@@ -220,7 +220,7 @@ sizeof(int)
 sizeof(n)
 ```
 
-## - Declaração de variáveis
+## Declaração de variáveis
 
     tipo nome;
 
@@ -235,7 +235,7 @@ char vetor[n]
 char matriz[m][n]
 ```
 
-### - Modificadores
+### Modificadores
 
     short    -> int
         Geralmente o compilador armazena menos espaço
@@ -246,7 +246,7 @@ char matriz[m][n]
     signed   -> char e int
         Inteiro com sinal
 
-### - Sinônimos
+### Sinônimos
 
     int = signed int
     short = short int
@@ -262,7 +262,7 @@ typedef int bool; // Cria o sinônimo "bool" para int
 typedef unsigned int natural; // Cria o sinônimo "natural" para int
 ```
 
-## - Atribuição de valor
+## Atribuição de valor
 
 ```c
 int a = 5;
@@ -271,7 +271,7 @@ char c = 'V';
 strcpy(nome, "Carlos");
 ```
 
-## - Casting
+## Casting
 
 ```c
 int x;
@@ -280,7 +280,7 @@ double y;
 y = (tipo) x;
 ```
 
-## - Placeholders
+## Placeholders
 
     %d/%i -> int
     %f    -> float
