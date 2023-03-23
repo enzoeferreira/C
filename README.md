@@ -338,6 +338,9 @@ tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da vari
 
 ```c
 printf(""); // print
+printf("\n"); // print com quebra de linha
+printf("%i", i); // print do inteiro (%i) "i"
+printf("%*.*i", p1, p2, f) // Largura e precisão (p1, p2) do float (%f) "f"
 // Precisa da biblioteca stdio.h
 ```
 
