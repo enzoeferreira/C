@@ -29,6 +29,7 @@
 - [Bibliotecas](#bibliotecas)
   - [stdio](#stdio)
 - [Funções](#funções)
+  - [Criação de funções](#criação-de-funções)
   - [printf()](#printf)
   - [puts()](#puts)
   - [scanf()](#scanf)
@@ -392,6 +393,18 @@ tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da vari
 ## stdio
 
 # Funções
+
+## Criação de funções
+
+```c
+tipo|void nome(args)
+{
+  // Sentenças
+
+  return var;
+}
+// Obs: void é usado quando a função não retornará nada
+```
 
 ## printf()
 
