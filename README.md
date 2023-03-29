@@ -37,18 +37,6 @@
   - [Funções importantes](#funções-importantes)
     - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
     - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
->>>>>>> 233a48fe47cf1196c8c0192f3dbd653bc0704a7f
-  - [Ponteiros](#ponteiros)
-- [Bibliotecas](#bibliotecas)
-  - [stdio](#stdio)
-- [Funções](#funções)
-  - [printf()](#printf)
-  - [puts()](#puts)
-  - [scanf()](#scanf)
-  - [fgets()](#fgets)
-  - [Funções importantes](#funções-importantes)
-    - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
-    - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
 
 # Estudos em C
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
