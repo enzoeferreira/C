@@ -7,6 +7,7 @@
   - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
   - [Declaração de variáveis](#declaração-de-variáveis)
+    - [Qualificadores:](#qualificadores)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
       - [sizeof()](#sizeof)
@@ -233,6 +234,12 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
 ## Declaração de variáveis
 
     qualificador* modificador* tipo nome1, nome2, ...;
+
+### Qualificadores:
+
+```c
+const tipo nome;
+```
 
 ### Tipos de variáveis:
 
