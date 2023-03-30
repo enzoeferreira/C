@@ -23,6 +23,8 @@
       - [\[largura\]](#largura)
       - [\[.precisão\]](#precisão)
       - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
+    - [putc()](#putc)
+    - [putchar(int c)](#putcharint-c)
     - [puts()](#puts)
     - [scanf()](#scanf)
       - [Especificadores de conversão](#especificadores-de-conversão)
@@ -382,6 +384,17 @@ Conversões s, S: Número máximo de caracteres impressos
     %Lf -> long double
     
     %x -> Número hexadecimal
+
+### <b>putc()</b>
+Saída não-formatada
+```c
+int putc(int c, FILE* stream)
+// Imprime o inteiro c convertido para unsigned char
+// Retorna c convertido para unsigned char ou EOF se houver erro
+```
+
+### <b>putchar(int c)</b>
+// Equivalente a putc(c, stdout)
 
 ### <b>puts()</b>
 
