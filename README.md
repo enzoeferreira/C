@@ -25,6 +25,8 @@
       - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
     - [puts()](#puts)
     - [scanf()](#scanf)
+      - [Especificadores de conversão](#especificadores-de-conversão)
+      - [Flags](#flags-1)
     - [fgets()](#fgets)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
@@ -313,8 +315,8 @@ tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da vari
 
 ## <b><STDIO.H></b>
 
-### printf()
-
+### <b>printf()</b>
+Saída formatada
 ```c
 int printf(const char *fmt, ...)
 // Imprime os parâmetros na lista ... em stdout usando a cadeia fmt para determinar como
@@ -381,17 +383,44 @@ Conversões s, S: Número máximo de caracteres impressos
     
     %x -> Número hexadecimal
 
-### puts()
+### <b>puts()</b>
 
 ```c
 puts(""); // print de apenas uma string
 ```
 
-### scanf()
-
+### <b>scanf()</b>
+Entrada formatada
 ```c
-scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
+int scanf(const char *fmt, ...)
+// Usa a cadeia de formato fmt e armazena na lista de endereços ...
+// Retorna o n° de variáveis convertidas ou EOF se algo impedir a conversão
 ```
+
+#### Especificadores de conversão
+
+    %d   -> Inteiro decimal com sinal
+    %i   -> Dec, Hexa ou Octal com sinal
+    %u   -> Decimal sem sinal
+    %o   -> Octal sem sinal
+    %x/X -> Hexadecimal sem sinal
+    %s   -> Cadeia sem brancos
+    %c   -> Cadeia de tamanho w
+    
+    %[""]  -> Cadeia com apenas os carac. especificados
+    %[^""] -> Cadeia sem os carac. especificados
+    $p     -> void
+    %n     -> Nada. Armazena o n° de carac. já lidos
+    %e/E/f/g -> Número em ponto flutuante com sinal
+
+    Obs: d, i, f, s consomem brancos, já c e [ não
+
+#### Flags
+
+    *  -> O campo deve ser lido mas não armazenado
+    n° -> Limita o número de dígitos lidos com i/f ou símbolos com s
+    '  -> Com números, especifica que há separadores de milhar
+    m  -> Com cadeias, faz com que a memória suficiente para a cadeia seja alocada
 
 ### fgets()
 
