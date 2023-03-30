@@ -14,26 +14,21 @@
       - [Sinônimos](#sinônimos)
   - [Atribuição de valor](#atribuição-de-valor)
   - [Casting](#casting)
-  - [Especificação de conversão](#especificação-de-conversão)
-    - [%\[parametro\]\[flags\]\[largura\]\[.precisão\]\[tamanho\]conversão](#parametroflagslarguraprecisãotamanhoconversão)
-    - [\[parametro\]](#parametro)
-    - [\[flags\]](#flags)
-    - [\[largura\]](#largura)
-    - [\[.precisão\]](#precisão)
-      - [Conversões d, i, o, u, x, X](#conversões-d-i-o-u-x-x)
-      - [Conversões a, A, e, E, f, F](#conversões-a-a-e-e-f-f)
-      - [Conversões g, G](#conversões-g-g)
-      - [Conversões s, S](#conversões-s-s)
-    - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
   - [Ponteiros](#ponteiros)
 - [Bibliotecas](#bibliotecas)
-  - [stdio](#stdio)
+  - [\<STDIO.H\>](#stdioh)
+    - [printf()](#printf)
+      - [Especificação de conversão:](#especificação-de-conversão)
+      - [\[flags\]](#flags)
+      - [\[largura\]](#largura)
+      - [\[.precisão\]](#precisão)
+      - [\[tamanho\] (Placeholders)](#tamanho-placeholders)
+    - [puts()](#puts)
+    - [scanf()](#scanf)
+    - [fgets()](#fgets)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
-  - [printf()](#printf)
-  - [puts()](#puts)
-  - [scanf()](#scanf)
-  - [fgets()](#fgets)
+  - [printf()](#printf-1)
   - [Funções importantes](#funções-importantes)
     - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
     - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
@@ -302,41 +297,69 @@ double y;
 y = (tipo) x;
 ```
 
-## Especificação de conversão
 
-### %[parametro][flags][largura][.precisão][tamanho]conversão
+## Ponteiros
 
-### [parametro]
+```c
+tipo *ponteiro; // Declara um ponteiro
+ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variável "x"
+*ponteiro = y;  // O VALOR do ponteiro apontando pra a variável "x" vai ser o valor da variável "y"
+x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
 
-### [flags]
+tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
+```
 
-### [largura]
+# Bibliotecas
 
-### [.precisão]
+## <b><STDIO.H></b>
 
-#### Conversões d, i, o, u, x, X
-    
-    Número mínimo de dígitos que deve ser mostrado
+### printf()
 
-#### Conversões a, A, e, E, f, F
+```c
+int printf(const char *fmt, ...)
+// Imprime os parâmetros na lista ... em stdout usando a cadeia fmt para determinar como
+// Retorna: número de caractéres impressos ou um número negativo se houver erro
+```
 
-    Número mínimo à direita da vírgula
+#### <b>Especificação de conversão:</b>
 
-#### Conversões g, G
+%[flags][largura][.precisão][tamanho]conversão
 
-    Número máximo de dígitos significativos
+#### <b>[flags]</b>
 
-#### Conversões s, S
+    0   -> Usa zeros ao invés de espaços para alinhar à direita
+    -   -> Alinha à esquerda
+    +   -> Sempre acrescente o sinal de + ou -
+    " " -> Acrescenta um espaço antes de um número positivo
+    #   -> Forma alternativa para g,G,f,F,e,E,o,x,X
 
-    Número máximo de caracteres impressos
+#### <b>[largura]</b>
 
-### [tamanho] (Placeholders)
+Substitui "*" com a quantidade necessária entregue pelos argumentos
+```c
+printf("%*d", largura, var) // Imprime "var" com * <- largura
+// Adicionará espaços em branco se necessário, se não, imprimirá o n° normalmente
+
+printf("%*.*f", largura, precisao, var) // Imprime "var" com largura e precisão
+```
+
+#### <b>[.precisão]</b>
+
+Conversões d, i, o, u, x, X: Número mínimo de dígitos que deve ser mostrado
+
+Conversões a, A, e, E, f, F: Número mínimo à direita da vírgula
+
+Conversões g, G: Número máximo de dígitos significativos
+
+Conversões s, S: Número máximo de caracteres impressos
+
+#### <b>[tamanho]</b> (Placeholders)
 
     %d/%i -> int
     %f    -> float
     %lf   -> double
     %c    -> char
-    %s    -> char[]
+    %s    -> cadeia
     %p    -> endereço
 
 
@@ -358,27 +381,23 @@ y = (tipo) x;
     
     %x -> Número hexadecimal
 
-Exemplo de uso:
+### puts()
 
 ```c
-printf("%d\n", x); // Imprime a variável inteira x (\n finaliza a linha)
-printf("%.2lf", y); // Imprime a variável double y (2 casas decimais)
+puts(""); // print de apenas uma string
 ```
 
-## Ponteiros
+### scanf()
 
 ```c
-tipo *ponteiro; // Declara um ponteiro
-ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variável "x"
-*ponteiro = y;  // O VALOR do ponteiro apontando pra a variável "x" vai ser o valor da variável "y"
-x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
-
-tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
+scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
 ```
 
-# Bibliotecas
+### fgets()
 
-## stdio
+```c
+fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
+```
 
 # Funções
 
@@ -396,34 +415,7 @@ tipo|void nome(args)
 
 ## printf()
 
-```c
-printf(""); // print
-printf("\n"); // print com quebra de linha
-printf("%i", i); // print do inteiro (%i) "i"
-printf("%*.*i", p1, p2, f) // Largura e precisão (p1, p2) do float (%f) "f"
-// Precisa da biblioteca stdio.h
-```
 
-## puts()
-
-```c
-puts(""); // print de apenas uma string
-// Precisa da biblioteca stdio.h
-```
-
-## scanf()
-
-```c
-scanf("%placeholder", &var); // textos e digitos sem espaços, no caso de %s não usar "&". Recomendável usar getchar() para consumir o \n ao apertar Enter (ainda no input buffer)
-// Precisa da biblioteca stdio.h
-```
-
-## fgets()
-
-```c
-fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
-// Precisa da biblioteca string.h
-```
 
 
 
