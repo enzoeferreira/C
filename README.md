@@ -32,6 +32,7 @@
     - [scanf()](#scanf)
       - [Especificadores de conversão](#especificadores-de-conversão)
       - [Flags](#flags-1)
+    - [gets()](#gets)
     - [fgets()](#fgets)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
@@ -465,8 +466,15 @@ int scanf(const char *fmt, ...)
     '  -> Com números, especifica que há separadores de milhar
     m  -> Com cadeias, faz com que a memória suficiente para a cadeia seja alocada
 
-### fgets()
+### gets()
+Entrada não-formatada
+```c
+char gets(array); // Guarda uma string em array
+// Discarta \n e não o coloca no buffer
+```
 
+### fgets()
+Entrada não formatada
 ```c
 fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
 
