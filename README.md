@@ -394,12 +394,15 @@ int putc(int c, FILE* stream)
 ```
 
 ### <b>putchar(int c)</b>
-// Equivalente a putc(c, stdout)
+Saída não-formatada
+Equivalente a putc(c, stdout)
 
 ### <b>puts()</b>
-
+Saída não-formatada
 ```c
-puts(""); // print de apenas uma string
+int puts(const char *s)
+// Escreve a cadeia *s no monitor, seguida de um \n
+// Retorna um número não-negativo se bem-sucedida ou EOF se houver erro
 ```
 
 ### <b>scanf()</b>
