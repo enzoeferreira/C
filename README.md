@@ -27,6 +27,7 @@
     - [putchar(int c)](#putcharint-c)
     - [puts()](#puts)
     - [scanf()](#scanf)
+    - [getc() e fgetc()](#getc-e-fgetc)
       - [Especificadores de conversão](#especificadores-de-conversão)
       - [Flags](#flags-1)
     - [fgets()](#fgets)
@@ -411,6 +412,16 @@ Entrada formatada
 int scanf(const char *fmt, ...)
 // Usa a cadeia de formato fmt e armazena na lista de endereços ...
 // Retorna o n° de variáveis convertidas ou EOF se algo impedir a conversão
+```
+
+### <b>getc() e fgetc()</b>
+Entrada não-formatada
+```c
+int getc(FILE *stream)
+int fgetc(FILE *stream)
+// Lê o próximo caractere da stream
+// Retorna como um unsigned int convertido para int
+// Retorna EOF no fim-de-arquivo ou em caso de erro
 ```
 
 #### Especificadores de conversão
