@@ -462,6 +462,12 @@ int scanf(const char *fmt, ...)
 
 ```c
 fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
+
+char* fgets(char *s, int n, FILE* stream)
+// Lê no máximo n-1 carac. ou até encontrar \n ou EOF
+// Armazena em s
+// Se o \n for lido, ele é colocado em s. Adiciona \0
+// Retorna s ou NULL se houver um erro
 ```
 
 # Funções
