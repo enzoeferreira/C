@@ -35,6 +35,7 @@
     - [gets()](#gets)
     - [fgets()](#fgets)
   - [\<STRING.H\>](#stringh)
+    - [strcpy()](#strcpy)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -488,6 +489,17 @@ char* fgets(char *s, int n, FILE* stream)
 
 ## <b><STRING.H></b>
 
+### strcpy()
+```c
+char* strcpy(char *dest, char* src);
+/**
+ * Copia a string apontada por "src" até '\0' no ponteiro "dest"
+ * 
+ * Retorna:
+ * 1) Cópia do destino
+ * 2) Zero em caso de sucesso, não-zero em erro
+ * /
+```
 
 # Funções
 
