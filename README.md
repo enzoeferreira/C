@@ -38,6 +38,7 @@
     - [strcpy()](#strcpy)
     - [strcat()](#strcat)
     - [strlen()](#strlen)
+    - [strcmp()](#strcmp)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -554,6 +555,19 @@ size_t strlen(char *str);
 /**
  * Retorna:
  * Comprimento da string (terminada por '\0')
+ */
+```
+
+### strcmp()
+
+```c
+int strcmp(char *string1, char *string2);
+/**
+ * Compara string1 com string2 lexicograficamente
+ * Retorna:
+ * Negativo se string1 < string2
+ * Zero se string1 = string2
+ * Positivo se string1 > string2
 ```
 
 # Funções
