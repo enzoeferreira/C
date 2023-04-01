@@ -37,6 +37,7 @@
   - [\<STRING.H\>](#stringh)
     - [strcpy()](#strcpy)
     - [strcat()](#strcat)
+    - [strlen()](#strlen)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -544,6 +545,15 @@ char* strcat(char *dest, char *src);
  * 1) Cópia do destino
  * 2) Zero em caso de sucesso, não-zero em erro
  */
+```
+
+### strlen()
+
+```c
+size_t strlen(char *str);
+/**
+ * Retorna:
+ * Comprimento da string (terminada por '\0')
 ```
 
 # Funções
