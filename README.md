@@ -570,6 +570,7 @@ int strcmp(char *string1, char *string2);
  * Negativo se string1 < string2
  * Zero se string1 = string2
  * Positivo se string1 > string2
+ */
 ```
 
 ### strchr()
@@ -582,6 +583,7 @@ char* strchr(char *str, int ch);
  * Retorna:
  * Ponteiro pro caractere encontrado em "str"
  * Ponteiro nulo se não encontrar
+ */
 ```
 
 ### strstr()
@@ -594,6 +596,7 @@ char* strstr(char *str, char*substring);
  * Retorna:
  * Ponteiro pro primeiro caractere da substring em "str"
  * Ponteiro nulo se não encontrar
+ */
 ```
 
 # Funções
