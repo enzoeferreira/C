@@ -39,6 +39,7 @@
     - [strcat()](#strcat)
     - [strlen()](#strlen)
     - [strcmp()](#strcmp)
+    - [strchr()](#strchr)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -568,6 +569,17 @@ int strcmp(char *string1, char *string2);
  * Negativo se string1 < string2
  * Zero se string1 = string2
  * Positivo se string1 > string2
+```
+
+### strchr()
+
+```c
+char* strchr(char *str, int ch);
+/**
+ * Encontra a primeira ocorrência do char 'ch'
+ * 
+ * Retorna:
+ * Ponteiro pro caractere encontrado em "str", ou um ponteiro nulo se não encontrar
 ```
 
 # Funções
