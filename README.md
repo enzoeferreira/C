@@ -34,6 +34,7 @@
       - [Flags](#flags-1)
     - [gets()](#gets)
     - [fgets()](#fgets)
+  - [\<STRING.H\>](#stringh)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -484,6 +485,9 @@ char* fgets(char *s, int n, FILE* stream)
 // Se o \n for lido, ele é colocado em s. Adiciona \0
 // Retorna s ou NULL se houver um erro
 ```
+
+## <b><STRING.H></b>
+
 
 # Funções
 
