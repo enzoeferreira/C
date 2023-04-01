@@ -41,6 +41,8 @@
     - [strcmp()](#strcmp)
     - [strchr()](#strchr)
     - [strstr()](#strstr)
+    - [tolower()](#tolower)
+    - [toupper()](#toupper)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -596,6 +598,32 @@ char* strstr(char *str, char*substring);
  * Retorna:
  * Ponteiro pro primeiro caractere da substring em "str"
  * Ponteiro nulo se não encontrar
+ */
+```
+
+### tolower()
+
+```c
+int tolower(int ch);
+/**
+ * Converte o caractere 'ch' para sua versão minúscula
+ * 
+ * Retorna:
+ * 1) Versão minúscula do caractere
+ * 2) Mesmo caractere caso já seja minúsculo ou não tenha essa versão
+ */
+```
+
+### toupper()
+
+```c
+int toupper(int ch);
+/**
+ * Converte o caractere 'ch' para sua versão maiúscula
+ * 
+ * Retorna:
+ * 1) Versão maiúscula do caractere
+ * 2) Mesmo caractere caso já seja maiúscula ou não tenha essa versão
  */
 ```
 
