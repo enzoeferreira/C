@@ -40,6 +40,7 @@
     - [strlen()](#strlen)
     - [strcmp()](#strcmp)
     - [strchr()](#strchr)
+    - [strstr()](#strstr)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -579,7 +580,20 @@ char* strchr(char *str, int ch);
  * Encontra a primeira ocorrência do char 'ch'
  * 
  * Retorna:
- * Ponteiro pro caractere encontrado em "str", ou um ponteiro nulo se não encontrar
+ * Ponteiro pro caractere encontrado em "str"
+ * Ponteiro nulo se não encontrar
+```
+
+### strstr()
+
+```c
+char* strstr(char *str, char*substring);
+/**
+ * Encontra a primeira ocorrencia de "substring" em "str"
+ * 
+ * Retorna:
+ * Ponteiro pro primeiro caractere da substring em "str"
+ * Ponteiro nulo se não encontrar
 ```
 
 # Funções
