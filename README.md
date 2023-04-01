@@ -36,6 +36,7 @@
     - [fgets()](#fgets)
   - [\<STRING.H\>](#stringh)
     - [strcpy()](#strcpy)
+    - [strcat()](#strcat)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -44,6 +45,7 @@
     - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
 
 # Estudos em C
+
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
 - ### [Youtube Playlist - Ponteiros (Canal De aluno para aluno)](https://youtube.com/playlist?list=PLa75BYTPDNKbhUVggmU3JUEBPibvh0C2t)
 
@@ -60,6 +62,7 @@
  * e no fim o inverso
  */
 ```
+
 ## Esqueleto Padrão
 
 ```c
@@ -72,9 +75,10 @@ int main()
 ## Comandos de repetição
 
 if()
+
 ```c
 if(condição)
-{    
+{
     // Sentenças
 }
 else if(condição 2)
@@ -88,10 +92,13 @@ else
 ```
 
 Ternário
+
 ```c
 condição ? verdadeiro : falso
 ```
+
 while
+
 ```c
 while(condição)
 {
@@ -100,6 +107,7 @@ while(condição)
 ```
 
 do
+
 ```c
 do
 {
@@ -109,6 +117,7 @@ do
 ```
 
 for
+
 ```c
 for(inicio; condição; incremento)
 {
@@ -116,7 +125,7 @@ for(inicio; condição; incremento)
 }
 /* Omitindo argumentos:
  * for(;;)
- * 
+ *
  * Caso uma variável seja definida dentro do for
  * seu escopo será apenas o for
  */
@@ -131,6 +140,7 @@ while (condição)
 ```
 
 switch
+
 ```c
 switch (expressão_integral)
 {
@@ -148,6 +158,7 @@ switch (expressão_integral)
 ## Desvios incondicionais (break, continue, goto)
 
 Não recomendado por quebrar fluxo de comandos e piorar legibilidade
+
 ```c
 break; // Termina uma repetição ou switch
 
@@ -188,6 +199,7 @@ identificador : sentença;
     n++ incrementa depois de executar, enquanto ++n incrementa antes de executar
 
 Exemplo:
+
 ```c
 n = 5;
 x = n++;
@@ -211,6 +223,7 @@ Aplicam a operação bit a bit
     >> -> Deslocamento à direita
 
 Exemplo:
+
 ```
   1011 0101
 & 1111 0110
@@ -263,7 +276,9 @@ typedef unsigned int natural; // Cria o sinônimo "natural" para int
 ```
 
 #### sizeof()
+
 Retorna um inteiro indicando quantos bytes tem seu argumento
+
 ```c
 sizeof(int) // Retorna o n° de bytes para o tipo "int"
 sizeof(n) // Retorna o n° de bytes para a variável "n"
@@ -284,7 +299,6 @@ sizeof(n) // Retorna o n° de bytes para a variável "n"
 
     signed    -> char e int
         Inteiro com sinal
-
 
 #### Sinônimos
 
@@ -313,7 +327,6 @@ double y;
 y = (tipo) x;
 ```
 
-
 ## Ponteiros
 
 ```c
@@ -330,7 +343,9 @@ tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da vari
 ## <b><STDIO.H></b>
 
 ### <b>printf()</b>
+
 Saída formatada
+
 ```c
 int printf(const char *fmt, ...)
 // Imprime os parâmetros na lista ... em stdout usando a cadeia fmt para determinar como
@@ -351,7 +366,8 @@ int printf(const char *fmt, ...)
 
 #### <b>[largura]</b>
 
-Substitui "*" com a quantidade necessária entregue pelos argumentos
+Substitui "\*" com a quantidade necessária entregue pelos argumentos
+
 ```c
 printf("%*d", largura, var) // Imprime "var" com * <- largura
 // Adicionará espaços em branco se necessário, se não, imprimirá o n° normalmente
@@ -394,11 +410,13 @@ Conversões s, S: Número máximo de caracteres impressos
     %le -> (double) Notação científica
 
     %Lf -> long double
-    
+
     %x -> Número hexadecimal
 
 ### <b>putc()</b>
+
 Saída não-formatada
+
 ```c
 int putc(int c, FILE* stream)
 // Imprime o inteiro c convertido para unsigned char
@@ -406,20 +424,24 @@ int putc(int c, FILE* stream)
 ```
 
 ### <b>putchar(int c)</b>
+
 Saída não-formatada
 Equivalente a putc(c, stdout)
 
 ### <b>puts()</b>
+
 Saída não-formatada
+
 ```c
 int puts(const char *s)
 // Escreve a cadeia *s no monitor, seguida de um \n
 // Retorna um número não-negativo se bem-sucedida ou EOF se houver erro
 ```
 
-
 ### <b>getc() e fgetc()</b>
+
 Entrada não-formatada
+
 ```c
 int getc(FILE *stream)
 int fgetc(FILE *stream)
@@ -429,14 +451,18 @@ int fgetc(FILE *stream)
 ```
 
 ### <b>getchar(void)</b>
+
 Entrada não formatada
+
 ```c
 // Equivalente a:
 getc(stdin)
 ```
 
 ### <b>scanf()</b>
+
 Entrada formatada
+
 ```c
 int scanf(const char *fmt, ...)
 // Usa a cadeia de formato fmt e armazena na lista de endereços ...
@@ -452,7 +478,7 @@ int scanf(const char *fmt, ...)
     %x/X -> Hexadecimal sem sinal
     %s   -> Cadeia sem brancos
     %c   -> Cadeia de tamanho w
-    
+
     %[""]  -> Cadeia com apenas os carac. especificados
     %[^""] -> Cadeia sem os carac. especificados
     $p     -> void
@@ -469,14 +495,18 @@ int scanf(const char *fmt, ...)
     m  -> Com cadeias, faz com que a memória suficiente para a cadeia seja alocada
 
 ### gets()
+
 Entrada não-formatada
+
 ```c
 char gets(array); // Guarda uma string em array
 // Discarta \n e não o coloca no buffer
 ```
 
 ### fgets()
+
 Entrada não formatada
+
 ```c
 fgets(var, lenght, stdin); // textos e digitos até a quebra de linha (c/ espaço)
 
@@ -490,15 +520,30 @@ char* fgets(char *s, int n, FILE* stream)
 ## <b><STRING.H></b>
 
 ### strcpy()
+
 ```c
-char* strcpy(char *dest, char* src);
+char* strcpy(char *dest, char *src);
 /**
  * Copia a string apontada por "src" até '\0' no ponteiro "dest"
+ *
+ * Retorna:
+ * 1) Cópia do destino
+ * 2) Zero em caso de sucesso, não-zero em erro
+ */
+```
+
+### strcat()
+
+```c
+char* strcat(char *dest, char *src);
+/**
+ * Concatena a string apontada por "src" até o '\0' no fim do ponteiro "dest"
+ * src[0] substitui o '\0' no fim de dest
  * 
  * Retorna:
  * 1) Cópia do destino
  * 2) Zero em caso de sucesso, não-zero em erro
- * /
+ */
 ```
 
 # Funções
@@ -517,11 +562,8 @@ tipo|void nome(args)
 
 ## printf()
 
-
-
-
-
 ## Funções importantes
+
 ### Limpar entrada (p/ usar fgets)
 
 ```c
@@ -535,6 +577,7 @@ void limpar_entrada()
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 ```
+
 ### Ler texto (fgets + tira o ENTER)
 
 ```c
