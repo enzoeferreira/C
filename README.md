@@ -16,6 +16,7 @@
   - [Atribuição de valor](#atribuição-de-valor)
   - [Casting](#casting)
   - [Ponteiros](#ponteiros)
+    - [Ponteiro de Função](#ponteiro-de-função)
 - [Bibliotecas](#bibliotecas)
   - [\<STDIO.H\>](#stdioh)
     - [printf()](#printf)
@@ -342,6 +343,30 @@ ponteiro = &x;  // APONTA o ponteiro para o endereço de memória (&) da variáv
 x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
 
 tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
+```
+
+### Ponteiro de Função
+
+Como ponteiro pra função única
+```c
+tipo funcao(tipo1 var1, tipo2 var2); // Função
+tipo (*funcaoptr)(tipo1, tipo2); // Ponteiro da função
+funcaoptr = funcao; // Ponteiro aponta pra função
+funcaoptr(argumento); // Coloca argumento na função
+```
+Como ponteiro para array de funções
+```c
+int sum(int a, int b);      // Função soma
+int subtract(int a, int b); // Função subtração
+int multiply(int a, int b); // Função multiplicação
+int divide(int a, int b);   // Função divisão
+
+int(*op[4])(int, int); // Declara array de ponteiros "op" com 4 ponteiros de função
+op[0] = sum;
+op[1] = subtract;
+op[2] = multiply;
+op[3] = divide;
+resultado = op[x](a, b) // Usa a operação "x" em 'a' e 'b' 
 ```
 
 # Bibliotecas
