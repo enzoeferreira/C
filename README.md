@@ -17,6 +17,7 @@
   - [Casting](#casting)
   - [Ponteiros](#ponteiros)
     - [Ponteiro de Função](#ponteiro-de-função)
+    - [Ponteiro void](#ponteiro-void)
 - [Bibliotecas](#bibliotecas)
   - [\<STDIO.H\>](#stdioh)
     - [printf()](#printf)
@@ -51,14 +52,14 @@
     - [Limpar entrada (p/ usar fgets)](#limpar-entrada-p-usar-fgets)
     - [Ler texto (fgets + tira o ENTER)](#ler-texto-fgets--tira-o-enter)
 
-# Estudos em C
+# <b>Estudos em C</b>
 
 - ### [Udemy](https://www.udemy.com/course/curso-algoritmos-logica-de-programacao/)
 - ### [Youtube Playlist - Ponteiros (Canal De aluno para aluno)](https://youtube.com/playlist?list=PLa75BYTPDNKbhUVggmU3JUEBPibvh0C2t)
 
-# Syntax
+# <b>Syntax</b>
 
-## Comentários
+## <b>Comentários</b>
 
 ```c
 // Comentários na linha utilizam "//"
@@ -70,7 +71,7 @@
  */
 ```
 
-## Esqueleto Padrão
+## <b>Esqueleto Padrão</b>
 
 ```c
 int main()
@@ -79,7 +80,7 @@ int main()
 }
 ```
 
-## Comandos de repetição
+## <b>Comandos de repetição</b>
 
 if()
 
@@ -162,7 +163,7 @@ switch (expressão_integral)
 }
 ```
 
-## Desvios incondicionais (break, continue, goto)
+## <b>Desvios incondicionais (break, continue, goto)</b>
 
 Não recomendado por quebrar fluxo de comandos e piorar legibilidade
 
@@ -177,7 +178,7 @@ goto identificador;
 identificador : sentença;
 ```
 
-## Operadores
+## <b>Operadores</b>
 
     + -> Adição
     - -> Subtração
@@ -217,7 +218,7 @@ x = ++n;
 // x = 6 e n = 6
 ```
 
-### Operadores bit a bit
+### <b>Operadores bit a bit</b>
 
 Se aplicam a tipos integrais
 Aplicam a operação bit a bit
@@ -254,17 +255,17 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
   0101 1010
 ```
 
-## Declaração de variáveis
+## <b>Declaração de variáveis</b>
 
     qualificador* modificador* tipo nome1, nome2, ...;
 
-### Qualificadores:
+### <b>Qualificadores:</b>
 
 ```c
 const tipo nome;
 ```
 
-### Tipos de variáveis:
+### <b>Tipos de variáveis:</b>
 
 ```c
 int
@@ -275,14 +276,14 @@ char vetor[n]
 char matriz[m][n]
 ```
 
-#### typedef
+#### <b>typedef</b>
 
 ```c
 typedef int inteiro; // Cria o sinônimo "inteiro" para int
 typedef unsigned int natural; // Cria o sinônimo "natural" para int
 ```
 
-#### sizeof()
+#### <b>sizeof()</b>
 
 Retorna um inteiro indicando quantos bytes tem seu argumento
 
@@ -291,7 +292,7 @@ sizeof(int) // Retorna o n° de bytes para o tipo "int"
 sizeof(n) // Retorna o n° de bytes para a variável "n"
 ```
 
-### Modificadores
+### <b>Modificadores</b>
 
     short     -> int
         Geralmente o compilador armazena menos espaço
@@ -307,7 +308,7 @@ sizeof(n) // Retorna o n° de bytes para a variável "n"
     signed    -> char e int
         Inteiro com sinal
 
-#### Sinônimos
+#### <b>Sinônimos</b>
 
     int = signed int
     short = short int
@@ -316,7 +317,7 @@ sizeof(n) // Retorna o n° de bytes para a variável "n"
     unsigned = unsigned int
     signed = signed int = int
 
-## Atribuição de valor
+## <b>Atribuição de valor</b>
 
 ```c
 int a = 5;
@@ -325,7 +326,7 @@ char c = 'V';
 strcpy(nome, "Carlos");
 ```
 
-## Casting
+## <b>Casting</b>
 
 ```c
 int x;
@@ -334,7 +335,7 @@ double y;
 y = (tipo) x;
 ```
 
-## Ponteiros
+## <b>Ponteiros</b>
 
 ```c
 tipo *ponteiro; // Declara um ponteiro
@@ -345,7 +346,7 @@ x = *ponteiro // variável "x" recebe o VALOR APONTADO pelo ponteiro
 tipo *ponteiro =  &x // Declara o ponteiro e já aponta para o endereço da variável "x"
 ```
 
-### Ponteiro de Função
+### <b>Ponteiro de Função</b>
 
 Como ponteiro pra função única
 ```c
@@ -370,7 +371,23 @@ op[3] = divide;
 resultado = op[x](a, b) // Usa a operação "x" em 'a' e 'b' 
 ```
 
-# Bibliotecas
+### <b>Ponteiro void</b>
+Aponta para qualquer tipo (Lembrar de usar um casting antes)
+```c
+int x = 33;
+float y = 12.4;
+char c = 'a';
+void *ptr;
+  
+ptr = &x;
+printf("void ptr aponta para %d\n", *((int *)ptr));
+ptr = &y;
+printf("void ptr aponta para %f\n", *((float *)ptr));
+ptr = &c;
+printf("void ptr aponta para %c", *((char *)ptr));
+```
+
+# <b>Bibliotecas</b>
 
 ## <b><STDIO.H></b>
 
@@ -394,7 +411,7 @@ int printf(const char *fmt, ...)
     -   -> Alinha à esquerda
     +   -> Sempre acrescente o sinal de + ou -
     " " -> Acrescenta um espaço antes de um número positivo
-    #   -> Forma alternativa para g,G,f,F,e,E,o,x,X
+    # <b>  -> Forma alternativa para g,G,f,F,e,E,o,x,X
 
 #### <b>[largura]</b>
 
@@ -501,7 +518,7 @@ int scanf(const char *fmt, ...)
 // Retorna o n° de variáveis convertidas ou EOF se algo impedir a conversão
 ```
 
-#### Especificadores de conversão
+#### <b>Especificadores de conversão</b>
 
     %d   -> Inteiro decimal com sinal
     %i   -> Dec, Hexa ou Octal com sinal
@@ -519,14 +536,14 @@ int scanf(const char *fmt, ...)
 
     Obs: d, i, f, s consomem brancos, já c e [ não
 
-#### Flags
+#### <b>Flags</b>
 
     *  -> O campo deve ser lido mas não armazenado
     n° -> Limita o número de dígitos lidos com i/f ou símbolos com s
     '  -> Com números, especifica que há separadores de milhar
     m  -> Com cadeias, faz com que a memória suficiente para a cadeia seja alocada
 
-### gets()
+### <b>gets()</b>
 
 Entrada não-formatada
 
@@ -535,7 +552,7 @@ char gets(array); // Guarda uma string em array
 // Discarta \n e não o coloca no buffer
 ```
 
-### fgets()
+### <b>fgets()</b>
 
 Entrada não formatada
 
@@ -551,7 +568,7 @@ char* fgets(char *s, int n, FILE* stream)
 
 ## <b><STRING.H></b>
 
-### strcpy()
+### <b>strcpy()</b>
 
 ```c
 char* strcpy(char *dest, char *src);
@@ -564,7 +581,7 @@ char* strcpy(char *dest, char *src);
  */
 ```
 
-### strcat()
+### <b>strcat()</b>
 
 ```c
 char* strcat(char *dest, char *src);
@@ -578,7 +595,7 @@ char* strcat(char *dest, char *src);
  */
 ```
 
-### strlen()
+### <b>strlen()</b>
 
 ```c
 size_t strlen(char *str);
@@ -588,7 +605,7 @@ size_t strlen(char *str);
  */
 ```
 
-### strcmp()
+### <b>strcmp()</b>
 
 ```c
 int strcmp(char *string1, char *string2);
@@ -601,7 +618,7 @@ int strcmp(char *string1, char *string2);
  */
 ```
 
-### strchr()
+### <b>strchr()</b>
 
 ```c
 char* strchr(char *str, int ch);
@@ -614,7 +631,7 @@ char* strchr(char *str, int ch);
  */
 ```
 
-### strstr()
+### <b>strstr()</b>
 
 ```c
 char* strstr(char *str, char*substring);
@@ -627,7 +644,7 @@ char* strstr(char *str, char*substring);
  */
 ```
 
-### tolower()
+### <b>tolower()</b>
 
 ```c
 int tolower(int ch);
@@ -640,7 +657,7 @@ int tolower(int ch);
  */
 ```
 
-### toupper()
+### <b>toupper()</b>
 
 ```c
 int toupper(int ch);
@@ -653,9 +670,9 @@ int toupper(int ch);
  */
 ```
 
-# Funções
+# <b>Funções</b>
 
-## Criação de funções
+## <b>Criação de funções</b>
 
 ```c
 tipo|void nome(args)
@@ -667,11 +684,11 @@ tipo|void nome(args)
 // Obs: void é usado quando a função não retornará nada
 ```
 
-## printf()
+## <b>printf()</b>
 
-## Funções importantes
+## <b>Funções importantes</b>
 
-### Limpar entrada (p/ usar fgets)
+### <b>Limpar entrada (p/ usar fgets)</b>
 
 ```c
 /*
@@ -685,7 +702,7 @@ void limpar_entrada()
 }
 ```
 
-### Ler texto (fgets + tira o ENTER)
+### <b>Ler texto (fgets + tira o ENTER)</b>
 
 ```c
 /*
