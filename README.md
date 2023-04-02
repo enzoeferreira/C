@@ -2,7 +2,7 @@
 - [Syntax](#syntax)
   - [Comentários](#comentários)
   - [Esqueleto Padrão](#esqueleto-padrão)
-  - [Comandos de repetição](#comandos-de-repetição)
+  - [Operadores condicionais e comandos de repetição](#operadores-condicionais-e-comandos-de-repetição)
     - [if()](#if)
       - [Ternário](#ternário)
     - [while()](#while)
@@ -86,7 +86,7 @@ int main()
 }
 ```
 
-## <b>Comandos de repetição</b>
+## <b>Operadores condicionais e comandos de repetição</b>
 
 ### <b>if()</b>
 
