@@ -366,6 +366,7 @@ op[0] = sum;
 op[1] = subtract;
 op[2] = multiply;
 op[3] = divide;
+// Essas 5 linhas podiam ser substituidas por int(*op[])() = {sum, subtract, multiply, divide};
 resultado = op[x](a, b) // Usa a operação "x" em 'a' e 'b' 
 ```
 
