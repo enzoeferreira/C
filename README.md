@@ -3,6 +3,12 @@
   - [Comentários](#comentários)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Comandos de repetição](#comandos-de-repetição)
+    - [if()](#if)
+      - [Ternário](#ternário)
+    - [while()](#while)
+      - [do](#do)
+    - [for()](#for)
+    - [switch()](#switch)
   - [Desvios incondicionais (break, continue, goto)](#desvios-incondicionais-break-continue-goto)
   - [Operadores](#operadores)
     - [Operadores bit a bit](#operadores-bit-a-bit)
@@ -82,7 +88,7 @@ int main()
 
 ## <b>Comandos de repetição</b>
 
-if()
+### <b>if()</b>
 
 ```c
 if(condição)
@@ -99,13 +105,13 @@ else
 }
 ```
 
-Ternário
+#### <b>Ternário</b>
 
 ```c
 condição ? verdadeiro : falso
 ```
 
-while
+### <b>while()</b>
 
 ```c
 while(condição)
@@ -114,7 +120,7 @@ while(condição)
 }
 ```
 
-do
+#### <b>do</b>
 
 ```c
 do
@@ -124,7 +130,7 @@ do
 // No "do" o teste é feito depois, então executará ao menos 1x
 ```
 
-for
+### <b>for()</b>
 
 ```c
 for(inicio; condição; incremento)
@@ -147,10 +153,10 @@ while (condição)
 }
 ```
 
-switch
+### <b>switch()</b>
 
 ```c
-switch (expressão_integral)
+switch(expressão_integral)
 {
     case constante_integral:
         // Sentenças
