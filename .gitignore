@@ -1,1 +1,4 @@
+# Ignora pasta testes
 tests/
+# Ignora arquivos .exe
+*.exe
