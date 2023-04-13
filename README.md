@@ -2,6 +2,7 @@
 - [Syntax](#syntax)
   - [Comentários](#comentários)
   - [Pré-processador](#pré-processador)
+    - [#include](#include)
     - [#define e #undef](#define-e-undef)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Operadores condicionais e comandos de repetição](#operadores-condicionais-e-comandos-de-repetição)
@@ -85,6 +86,19 @@
 ```
 
 ## <b>Pré-processador</b>
+
+### <b>#include</b>
+
+```c
+#include <arquivo>
+#include "arquivo"
+/**
+ * O pré-processador substitui a linha pelo conteúdo do arquivo
+ * 
+ * <arquivo> é procurado em diretórios padrão
+ * "arquivo" é procurado no próprio diretório (Ou no diretório indicado)
+ */
+```
 
 ### <b>#define e #undef</b>
 
