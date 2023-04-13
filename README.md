@@ -54,6 +54,7 @@
   - [\<STDLIB.H\>](#stdlibh)
     - [malloc()](#malloc)
     - [calloc()](#calloc)
+    - [free()](#free)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -705,6 +706,18 @@ void* calloc(size_t n, size_t t);
  * Retorna:
  * 1) Apontador void para o início da região
  * 2) NULL se não for possível alocar
+ */
+```
+
+### <b>free()</b>
+
+```c
+void* free(void *ptr);
+/**
+ * Libera a região apontada pelo ponteiro ptr (alocada por malloc, calloc ou realloc)
+ * 
+ * Retorna:
+ * Nada
  */
 ```
 
