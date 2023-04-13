@@ -1,6 +1,7 @@
 - [Estudos em C](#estudos-em-c)
 - [Syntax](#syntax)
   - [Comentários](#comentários)
+  - [Pré-processador](#pré-processador)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Operadores condicionais e comandos de repetição](#operadores-condicionais-e-comandos-de-repetição)
     - [if()](#if)
@@ -81,6 +82,8 @@
  * e no fim o inverso
  */
 ```
+
+## <b>Pré-processador</b>
 
 ## <b>Esqueleto Padrão</b>
 
