@@ -4,6 +4,7 @@
   - [Pré-processador](#pré-processador)
     - [#include](#include)
     - [#define e #undef](#define-e-undef)
+      - [Funções genéricas](#funções-genéricas)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Operadores condicionais e comandos de repetição](#operadores-condicionais-e-comandos-de-repetição)
     - [if()](#if)
@@ -109,6 +110,19 @@
 // A definição é desativada a partir desse ponto
 ```
 
+#### <b>Funções genéricas</b>
+
+```c
+#define quad(x) ((x)*(x))
+
+quad(2)       // ((2)*(2))
+quad(2+2)     // ((2+2)*(2+2))
+quad(quad(2)) // ((((2)*(2)))*(((2)*(2))))
+```
+```c
+#define min(x,y) (((x<y)) ? (x) : (y))
+#define min(a,b,c,d) min(min(a,b), min(c,d))
+```
 
 ## <b>Esqueleto Padrão</b>
 
