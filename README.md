@@ -18,6 +18,8 @@
     - [Operadores bit a bit](#operadores-bit-a-bit)
   - [Declaração de variáveis](#declaração-de-variáveis)
     - [Qualificadores:](#qualificadores)
+      - [auto](#auto)
+      - [const](#const)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
       - [sizeof()](#sizeof)
@@ -314,6 +316,13 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
 
 ### <b>Qualificadores:</b>
 
+#### <b>auto</b>
+Variáveis locais a um bloco (a memória é liberada quando sai)
+```c
+auto tipo nome;
+```
+
+#### <b>const</b>
 ```c
 const tipo nome;
 ```
