@@ -19,6 +19,7 @@
   - [Declaração de variáveis](#declaração-de-variáveis)
     - [Qualificadores:](#qualificadores)
       - [auto](#auto)
+      - [extern](#extern)
       - [const](#const)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
@@ -320,6 +321,12 @@ OBS: Deslocar p/ a esquerda é equivalente a multiplicar por 2
 Variáveis locais a um bloco (a memória é liberada quando sai)
 ```c
 auto tipo nome;
+```
+
+#### <b>extern</b>
+Variáveis globais fora de uma função (aloca memória permanente)
+```c
+extern tipo nome;
 ```
 
 #### <b>const</b>
