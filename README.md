@@ -51,6 +51,7 @@
     - [strstr()](#strstr)
     - [tolower()](#tolower)
     - [toupper()](#toupper)
+  - [\<STDLIB.H\>](#stdlibh)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -675,6 +676,8 @@ int toupper(int ch);
  * 2) Mesmo caractere caso já seja maiúscula ou não tenha essa versão
  */
 ```
+
+## <b><STDLIB.H></b>
 
 # <b>Funções</b>
 
