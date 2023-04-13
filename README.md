@@ -345,6 +345,7 @@ static tipo nome;
 ```
 
 #### <b>const</b>
+Variável que não pode ser alterada
 ```c
 const tipo nome;
 ```
