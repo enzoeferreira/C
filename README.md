@@ -2,6 +2,7 @@
 - [Syntax](#syntax)
   - [Comentários](#comentários)
   - [Pré-processador](#pré-processador)
+    - [#define e #undef](#define-e-undef)
   - [Esqueleto Padrão](#esqueleto-padrão)
   - [Operadores condicionais e comandos de repetição](#operadores-condicionais-e-comandos-de-repetição)
     - [if()](#if)
@@ -84,6 +85,16 @@
 ```
 
 ## <b>Pré-processador</b>
+
+### <b>#define e #undef</b>
+
+```c
+#define identificador token
+// O pré-processador substitui as ocorrências do identificador por tokens
+#undef identificador
+// A definição é desativada a partir desse ponto
+```
+
 
 ## <b>Esqueleto Padrão</b>
 
