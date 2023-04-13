@@ -20,6 +20,7 @@
     - [Qualificadores:](#qualificadores)
       - [auto](#auto)
       - [extern](#extern)
+      - [register](#register)
       - [const](#const)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
@@ -327,6 +328,13 @@ auto tipo nome;
 Variáveis globais fora de uma função (aloca memória permanente)
 ```c
 extern tipo nome;
+```
+
+#### <b>register</b>
+Variável que vai ser mantida em um registrador da CPU
+Melhora o desempenho de operações realizadas várias vezes
+```c
+register tipo nome;
 ```
 
 #### <b>const</b>
