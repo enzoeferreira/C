@@ -55,6 +55,7 @@
     - [malloc()](#malloc)
     - [calloc()](#calloc)
     - [free()](#free)
+    - [realloc()](#realloc)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -718,6 +719,20 @@ void* free(void *ptr);
  * 
  * Retorna:
  * Nada
+ */
+```
+
+### <b>realloc()</b>
+
+```c
+void* realloc(void *ptr, size_t n);
+/**
+ * Realoca uma região previamente alocada para que fique com "n" bytes
+ * 
+ * Retorna:
+ * 1) Apontador void para o início da região
+ * 2) NULL se não for possível alocar
+ *    Nesse caso a região original permanece inalterada
  */
 ```
 
