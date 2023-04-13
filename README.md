@@ -23,6 +23,7 @@
       - [register](#register)
       - [static](#static)
       - [const](#const)
+      - [volatile](#volatile)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
       - [sizeof()](#sizeof)
@@ -348,6 +349,16 @@ static tipo nome;
 Variável que não pode ser alterada
 ```c
 const tipo nome;
+```
+
+#### <b>volatile</b>
+Variável que pode ser alterada pelo hardware
+```c
+extern volatile tipo nome;
+```
+Variável que pode ser alterada pelo hardware mas não pelo programador
+```c
+extern const volatile tipo nome;
 ```
 
 ### <b>Tipos de variáveis:</b>
