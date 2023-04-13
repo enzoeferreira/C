@@ -482,6 +482,7 @@ printf("void ptr aponta para %f\n", *((float *)ptr));
 ptr = &c;
 printf("void ptr aponta para %c", *((char *)ptr));
 ```
+Útil para criação de funções que podem receber ou devolver um tipo de dado não especificado
 
 # <b>Bibliotecas</b>
 
