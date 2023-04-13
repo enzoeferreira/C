@@ -21,6 +21,7 @@
       - [auto](#auto)
       - [extern](#extern)
       - [register](#register)
+      - [static](#static)
       - [const](#const)
     - [Tipos de variáveis:](#tipos-de-variáveis)
       - [typedef](#typedef)
@@ -335,6 +336,12 @@ Variável que vai ser mantida em um registrador da CPU
 Melhora o desempenho de operações realizadas várias vezes
 ```c
 register tipo nome;
+```
+
+#### <b>static</b>
+Variável local, faz com que a variável não seja recriada a cada chamada da função
+```c
+static tipo nome;
 ```
 
 #### <b>const</b>
