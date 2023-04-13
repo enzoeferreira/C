@@ -52,6 +52,7 @@
     - [tolower()](#tolower)
     - [toupper()](#toupper)
   - [\<STDLIB.H\>](#stdlibh)
+    - [malloc()](#malloc)
 - [Funções](#funções)
   - [Criação de funções](#criação-de-funções)
   - [printf()](#printf-1)
@@ -678,6 +679,18 @@ int toupper(int ch);
 ```
 
 ## <b><STDLIB.H></b>
+
+### <b>malloc()</b>
+```c
+void* malloc(size_t n);
+/**
+ * Aloca n bytes consecutivos na memória
+ * 
+ * Retorna:
+ * 1) Apontador void para o início da região
+ * 2) NULL se não for possível alocar
+ */
+```
 
 # <b>Funções</b>
 
